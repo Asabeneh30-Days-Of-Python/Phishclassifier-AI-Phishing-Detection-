@@ -49,18 +49,22 @@ RUN pip install --no-cache-dir --no-index --find-links=/wheels --no-deps --force
 COPY . .
 
 # Optional: install spaCy model and NLTK lexicon from wheelhouse (deterministic)
-# - place en_core_web_sm-3.8.0-py3-none-any.whl into ./wheels before building
-# - if the model wheel is absent, this step will be skipped (avoids network access)
-RUN if ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then \
-      echo "Installing spaCy model from wheelhouse"; \
-      pip install --no-index --find-links=/wheels /wheels/en_core_web_sm-3.8.0-py3-none-any.whl || pip install --no-index --find-links=/wheels en_core_web_sm; \
+# - ensure en_core_web_sm-3.7.2-py3-none-any.whl is present in ./wheels for spacy==3.7.2
+RUN if [ -f /wheels/en_core_web_sm-3.7.2-py3-none-any.whl ]; then \
+      echo "Installing en_core_web_sm-3.7.2 from explicit wheel"; \
+      pip install --no-index --find-links=/wheels /wheels/en_core_web_sm-3.7.2-py3-none-any.whl; \
+    elif ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then \
+      echo "Installing en_core_web_sm from wheelhouse by package name"; \
+      pip install --no-index --find-links=/wheels en_core_web_sm; \
     else \
       echo "No en_core_web_sm wheel found in /wheels; skipping model install (will fetch at runtime if needed)"; \
     fi && \
     if pip show nltk > /dev/null 2>&1; then \
-      echo "Installing NLTK vader_lexicon data into /root/nltk_data (only if reachable)"; \
-      python -c "import nltk, sys; import os; d=os.environ.get('NLTK_DATA','/root/nltk_data'); os.makedirs(d, exist_ok=True); nltk.data.path.append(d); import nltk.downloader as nd; nd.download('vader_lexicon', download_dir=d)"; \
-    else \
+      echo "Installing NLTK vader_lexicon data into /root/nltk_data"; \
+      python - <<'PY' \
+import nltk, os; d=os.environ.get('NLTK_DATA','/root/nltk_data'); os.makedirs(d, exist_ok=True); import nltk.downloader as nd; nd.download('vader_lexicon', download_dir=d) \
+PY \
+    ; else \
       echo "NLTK not installed or not in wheelhouse; skipping NLTK data download"; \
     fi
 
