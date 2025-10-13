@@ -1,4 +1,4 @@
-# Dockerfile — runtime image installs only from an external wheelhouse (COPY ./wheels -> /wheels)
+﻿# Dockerfile — runtime image installs only from an external wheelhouse (COPY ./wheels -> /wheels)
 FROM python:3.11-slim-bullseye AS runtime
 
 # Avoid apt hash fetch problems
@@ -28,45 +28,46 @@ COPY requirements-runtime.txt requirements-dev.txt /app/
 ARG INSTALL_DEV=0
 
 # Install runtime by default; only install dev extras when explicitly requested.
-# Use wheelhouse only (--no-index --find-links=/wheels) so builds cannot fall back to PyPI.
+# Use wheelhouse only (--find-links=/wheels) so builds cannot fall back to PyPI.
 RUN if [ "${INSTALL_DEV}" = "1" ]; then \
       echo "Dev image: install runtime then dev extras from wheelhouse"; \
-      pip install --no-cache-dir --no-index --find-links=/wheels -r /app/requirements-runtime.txt -c /app/constraints.txt && \
+      pip install --no-cache-dir --find-links=/wheels --extra-index-url https://download.pytorch.org/whl/cpu -r /app/requirements-runtime.txt -c /app/constraints.txt && \
       if [ -f /app/requirements-dev.txt ] && [ -s /app/requirements-dev.txt ]; then \
-        pip install --no-cache-dir --no-index --find-links=/wheels -r /app/requirements-dev.txt -c /app/constraints.txt; \
+        pip install --no-cache-dir --find-links=/wheels --extra-index-url https://download.pytorch.org/whl/cpu -r /app/requirements-dev.txt -c /app/constraints.txt; \
       fi; \
     else \
       echo "Prod image: install runtime only from wheelhouse"; \
-      pip install --no-cache-dir --no-index --find-links=/wheels -r /app/requirements-runtime.txt -c /app/constraints.txt; \
+      pip install --no-cache-dir --find-links=/wheels --extra-index-url https://download.pytorch.org/whl/cpu -r /app/requirements-runtime.txt -c /app/constraints.txt; \
     fi
 
 # Re-enforce pinned packages from wheelhouse (force exact eventlet version required by gunicorn)
 # Use --no-index --find-links so pip cannot fetch a different eventlet from PyPI
-RUN pip install --no-cache-dir --no-index --find-links=/wheels --no-deps --force-reinstall eventlet==0.33.0 \
- && pip install --no-cache-dir --no-index --find-links=/wheels --force-reinstall numpy==1.23.5 || true
+RUN pip install --no-cache-dir --find-links=/wheels --extra-index-url https://download.pytorch.org/whl/cpu --no-deps --force-reinstall eventlet==0.40.3
 
 # Application source
 COPY . .
 
-# Optional: install spaCy model and NLTK lexicon from wheelhouse (deterministic)
-# - ensure en_core_web_sm-3.7.2-py3-none-any.whl is present in ./wheels for spacy==3.7.2
-RUN if [ -f /wheels/en_core_web_sm-3.7.2-py3-none-any.whl ]; then \
-      echo "Installing en_core_web_sm-3.7.2 from explicit wheel"; \
-      pip install --no-index --find-links=/wheels /wheels/en_core_web_sm-3.7.2-py3-none-any.whl; \
-    elif ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then \
-      echo "Installing en_core_web_sm from wheelhouse by package name"; \
-      pip install --no-index --find-links=/wheels en_core_web_sm; \
-    else \
-      echo "No en_core_web_sm wheel found in /wheels; skipping model install (will fetch at runtime if needed)"; \
-    fi && \
-    if pip show nltk > /dev/null 2>&1; then \
-      echo "Installing NLTK vader_lexicon data into /root/nltk_data"; \
-      python - <<'PY' \
-import nltk, os; d=os.environ.get('NLTK_DATA','/root/nltk_data'); os.makedirs(d, exist_ok=True); import nltk.downloader as nd; nd.download('vader_lexicon', download_dir=d) \
-PY \
-    ; else \
-      echo "NLTK not installed or not in wheelhouse; skipping NLTK data download"; \
-    fi
+# Ensure start-worker-io.sh is included in the image and executable
+# This bakes the corrected, Unix-shebang script into the image so worker_io can exec it.
+# Replace or remove this COPY if you prefer to run the inline command in docker-compose instead.
+COPY start-worker-io.sh /app/start-worker-io.sh
+RUN chmod +x /app/start-worker-io.sh || true
+
+# install en_core_web_sm wheel from /wheels if present, then install NLTK vader_lexicon if nltk is installed
+RUN if ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then \
+  echo "Installing en_core_web_sm from first matching wheel in /wheels"; \
+  for f in /wheels/en_core_web_sm-*; do \
+    pip install --no-index "$f" && break; \
+  done; \
+else \
+  echo "No en_core_web_sm wheel found in /wheels; skipping model install (will fetch at runtime if needed)"; \
+fi && \
+if pip show nltk > /dev/null 2>&1; then \
+  echo "Installing NLTK vader_lexicon into /root/nltk_data"; \
+  python -c "import nltk, os; d=os.environ.get('NLTK_DATA','/root/nltk_data'); os.makedirs(d, exist_ok=True); import nltk.downloader as nd; nd.download('vader_lexicon', download_dir=d)"; \
+else \
+  echo "NLTK not installed or not in wheelhouse; skipping NLTK data download"; \
+fi
 
 EXPOSE 5000
 
