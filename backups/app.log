@@ -1,0 +1,1150 @@
+2025-05-26 14:34:31,673 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 14:34:31,673 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 14:34:31,890 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 14:34:31,891 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 14:34:31,892 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 14:34:31,893 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (OPTIONS, GET, HEAD) -> prometheus_metrics>])
+2025-05-26 14:34:32,034 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 14:34:32,035 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 14:34:32,041 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 14:34:35,402 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 14:34:35,402 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 14:34:35,446 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 14:34:35,448 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 14:34:35,448 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 14:34:35,449 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 14:34:35,450 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>])
+2025-05-26 14:34:35,475 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 14:34:35,490 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 14:35:03,453 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 14:35:03] "GET / HTTP/1.1" 200 -
+2025-05-26 14:35:03,518 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 14:35:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-26 16:13:52,003 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 16:13:52,617 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 16:13:55,915 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:13:55,916 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:13:55,978 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 16:13:55,979 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:13:55,980 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:13:55,980 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:13:55,981 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/' (HEAD, OPTIONS, GET) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, OPTIONS, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, OPTIONS, GET) -> api.secure_endpoint>])
+2025-05-26 16:13:56,011 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 16:13:56,018 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 16:15:11,636 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:15:11,637 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:15:11,659 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:15:11,660 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:15:11,660 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:15:11,660 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/metrics' (HEAD, GET, OPTIONS) -> prometheus_metrics>])
+2025-05-26 16:15:11,690 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 16:15:11,690 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 16:15:11,693 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 16:15:14,016 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:15:14,016 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:15:14,040 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 16:15:14,041 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:15:14,041 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:15:14,041 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:15:14,041 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, HEAD, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, HEAD, GET) -> api.secure_endpoint>])
+2025-05-26 16:15:14,054 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 16:15:14,058 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 16:15:33,862 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:15:33] "GET / HTTP/1.1" 200 -
+2025-05-26 16:15:52,762 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:15:52] "GET / HTTP/1.1" 200 -
+2025-05-26 16:20:33,683 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:20:33] "GET / HTTP/1.1" 200 -
+2025-05-26 16:23:36,031 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:23:36] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:23:36,203 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:23:36] "GET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-26 16:23:36,223 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:23:36] "GET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-26 16:23:36,312 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:23:36] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=Mr7TwYWbQMsf19uyc6Nk HTTP/1.1" 200 -
+2025-05-26 16:23:36,344 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:23:36] "GET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-26 16:33:36,375 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:33:36,376 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:33:36,397 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:33:36,397 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:33:36,397 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:33:36,398 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (GET, OPTIONS, HEAD) -> prometheus_metrics>])
+2025-05-26 16:33:36,424 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 16:33:36,424 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 16:33:36,426 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 16:33:38,644 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:33:38,645 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:33:38,665 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 16:33:38,665 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:33:38,665 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:33:38,666 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:33:38,666 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/' (HEAD, OPTIONS, GET) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, OPTIONS, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, OPTIONS, GET) -> api.secure_endpoint>])
+2025-05-26 16:33:38,677 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 16:33:38,680 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 16:34:19,291 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:34:19] "GET / HTTP/1.1" 200 -
+2025-05-26 16:34:46,168 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:34:46] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:34:46,322 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:34:46] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 16:34:46,329 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:34:46] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 16:34:46,372 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:34:46] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=oow7EV9Ftt5wUrv2JJu0 HTTP/1.1" 200 -
+2025-05-26 16:53:37,872 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:37] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:53:37,884 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:37] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 16:53:37,885 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:37] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 16:53:37,908 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:37] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png&s=oow7EV9Ftt5wUrv2JJu0 HTTP/1.1[0m" 304 -
+2025-05-26 16:53:37,920 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:37] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-26 16:53:40,672 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:40] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:53:40,694 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:40] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 16:53:40,694 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:40] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 16:53:40,717 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:40] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png&s=oow7EV9Ftt5wUrv2JJu0 HTTP/1.1[0m" 304 -
+2025-05-26 16:53:40,747 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:40] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-26 16:53:42,144 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:42] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:53:42,165 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 16:53:42,166 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 16:53:42,194 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png&s=oow7EV9Ftt5wUrv2JJu0 HTTP/1.1[0m" 304 -
+2025-05-26 16:53:42,223 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:53:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-26 16:55:44,258 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 16:55:44,603 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 16:55:49,294 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:55:49,295 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:55:49,321 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 16:55:49,322 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:55:49,322 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:55:49,322 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:55:49,322 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>])
+2025-05-26 16:55:49,339 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 16:55:49,342 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 16:56:14,302 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:56:14,302 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:56:14,326 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:56:14,326 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:56:14,327 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:56:14,327 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (OPTIONS, GET, HEAD) -> prometheus_metrics>])
+2025-05-26 16:56:14,356 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 16:56:14,356 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 16:56:14,358 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 16:56:16,816 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 16:56:16,816 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 16:56:16,841 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 16:56:16,841 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 16:56:16,841 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 16:56:16,842 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 16:56:16,842 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>])
+2025-05-26 16:56:16,857 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 16:56:16,860 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 16:56:27,314 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('ý')
+2025-05-26 16:56:27,314 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03]Å\x11ó.²48º\x81Ýc[\x04X\x94YF\x8ey£\x19\x08\x9eMyAÃjÏ\x8b\x06 ý[0m" 400 -
+2025-05-26 16:56:27,317 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+2025-05-26 16:56:27,317 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03¯X\x97I\x85ÉÏ÷8ý.út{díà\x0b\x01\x06£¨\x91'+\x1f'lQ9ï² \x16iBvu*\x1b4a \x90Z\x9cÙÄäÎÓø\x9f%\x0b\x8eQ0úùó\x9a-O·\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063**\x00\x00DÍ\x00\x05\x00\x03\x02h2þ\x0d\x00º\x00\x00\x01\x00\x01g\x00 \x8bö\x02Ö!\x8f@\x00¥ñE7ûß·\x11\x08\x1d$äèK\x87¿R\x86\x91¡·¯pD\x00\x90<³\x9aì\x8dÍèÀÀ\x8cR\x8f(\x84\x01\x01\x1f\x9b®<\x99Îí\x1c\x9eÊ6í\x8büôÏ{I\x7fH½Ó\x150\x88ÏGÔ<ñù6)FøÒ´~4ç"©\x1e\x00oã\x15>$Ûa4þÔ£¢ntC\x14üÊ?`©v\x81¿\x7f\x99Ï6çDVÍ\x8cÊ\x94\x9a%\x14Áòp(\x15Zü{\x1eyR$YR\x10NI@«þ8bõ\x92G\x99:ÙÉ,\x95¶ad\x850KöD}\x01\x06¡\x93üp\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00[0m" 400 -
+2025-05-26 16:56:27,327 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+2025-05-26 16:56:27,328 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03T\x838»ò\x11&\x8e,økÈ5<,&aëBWyô\x0cÿ\x81§\x0dÝ#S\\\x1a ªÛ\x8a\x92\x90ßaÝì9²«\x9bjõÑ\x14\x97E\x0eúk)`\x18ºS\x9fðæ\x0d6\x00 ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÊÊ\x00\x00\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+2025-05-26 16:56:27,333 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+2025-05-26 16:56:27,334 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03´\x1f\x96{3ö\x13º<0\x03z\x01Ú\x84\x80¾\x88\x82¯·¯ùµç\x8bþ+²\x1beU {äc\x1c®µ´á\x7f±(\x87yø\x90\x8f\x10¨öÏêcT\x96\x9a\x96¨9\x8cñ+I\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S[0m" 400 -
+2025-05-26 16:56:27,335 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('\x00\x02\x01\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À')
+2025-05-26 16:56:27,336 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03Ù\x0b°òÞÚ\x061×É¶QM{,,]íÜ\x03$Í\x10\x09rrÎT)°-b /.¡í\x11ÛN¡ú<\x06¶3\x9at¹m\x83\x96t\x8f\x1a`¡½\x83Tlöc\x08Á\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063::\x00\x00\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À[0m" 400 -
+2025-05-26 16:56:27,338 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] code 400, message Bad request version ('à\'£"S')
+2025-05-26 16:56:27,339 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:27] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03e\x1a¨Õ'Åd«\x10ô\x00\x02Ç\x08A½\x06\x18­\x03\x81¦£û\x11\x093<Å\x12\x86~ ,¤Ý\x03\x12 æ£H\x92\x08ü\x9dÐ\x8eÃwÆ\x14l\x02tå\x9d\x7fªtù\x83å\x95{\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x00\x17\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04À\x1c\x97Ê¢étY\x83Âît2öÒ«Q7<ú¼\x08\x9d\\\x1b/¬EMÃÆ\x12G\x1cà'£"S[0m" 400 -
+2025-05-26 16:56:33,728 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version (";\x96D®0\x9cnì\x9a'ò'\x05À³h7¶Å¨(s\x0f8fE×Åá\x011¥¸²\x90©w\x10:\x0e-L&¢Ôº\x19å/\x10\x9cÇkA°næ\x18\x00T\x17\x86\x8cMe\x86^Àç·Õ%2\x0fRkt\x87CÕ\x98\x03(vÎ\x9ewm\x0eÖ")
+2025-05-26 16:56:33,729 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x98(À\x14F\x8bu=G¿):ÉúþZèäR\x9bf^Á\x9eò\x8329P%Ëù U/²\x8aì=\x19Ý¾/ \x00nÃ´ü\x7f®aRk\x15ÝÑ¼ Ðsb\x04½\x91\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063êê\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01á\x00 ßûÕ\x10Yn\x11Î\x0eA6\x95\x96l`ªÀÅ½¶\x8d\x19Ü~aaÉg\x86èu \x00\x90µ\x0d²ÍieB\x0fæá\x05W#!¤\x96ÿt\\t0Ç\x84\x19\x8eù]D\x8a¼\x05Ë\x9c!sÀÒ\x02\x97Ý\x16\x84Ù\x8fæN'A¯\x9f´Ý\x12\x85ÿG¡Íê¯Ý©c@\x06ipz'\x89\x80éM³\x1cÚjÍ\x02\x83mñ\x0ch{W+øåf\x8f\x92G\x04\x13Ã¸éñ¼\x1e\x09¸\x05úýL\x8f]\x07)¬>>K\x16¥p\x80ØÍ<\x05\x81gGI\x1eçÔö\x9e]ûÊÓ¦ë\x91;é\x88\x13%\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00#\x00\x00\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04ÀÀv)\x19(%\x08V\x83À\x1c;\x96D®0\x9cnì\x9a'ò'\x05À³h7¶Å¨(s\x0f8fE×Åá\x011¥¸²\x90©w\x10:\x0e-L&¢Ôº\x19å/\x10\x9cÇkA°næ\x18\x00T\x17\x86\x8cMe\x86^Àç·Õ%2\x0fRkt\x87CÕ\x98\x03(vÎ\x9ewm\x0eÖ[0m" 400 -
+2025-05-26 16:56:33,731 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version ('ø')
+2025-05-26 16:56:33,732 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03±ÆÎ\x1b*:Õ|\x9fhboO3+×(5î\x8b\x0e¾\x16[»4|û«g\x1d_ ¨Y\x9dzZR\x84\x1fø[0m" 400 -
+2025-05-26 16:56:33,754 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version ('ÒhnD')
+2025-05-26 16:56:33,755 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03\x8dÒÎþáqä³½¸a\x0b·Y.ÅïJDò,\x978ñïë\x83\x93\x14VH\x9d \x04£ZÆhë\x14-è\x19\x00-B\x04ËS\x88Ü'ÁÃ°ñ¾Äñ\x09Ì/æ|\x19\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ZZ\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2þ\x0d\x01\x1a\x00\x00\x01\x00\x01u\x00 ¬æ²\x12¼p\x91\x90£Ö\x15÷ÇÉÙ_\x93\x87x\x09Ú`üUç\x85\x9bdÎ²ò\x0b\x00ð³d6ý5\x05m©_ °êUåzî6ù´\x1a_M\x0f\x84[6\x8f4\x84\x86{\x16ß\x11|ùL\x1dÜ\x85t4\x15\x86]üû|³àQ§ !è\x0dÛ5y\x8f¢\x85(Ï\x18\x86\x1eËZ\x94Å»Ñ\x9aû¶Æ\x18°âZæ²ó\x11\x9c\x16Î~\x15è¶¢çýmùq0êZþ,;Xr\x838­Äâ%H]ST<Ó¢¼\x09\x94b\x18Z\x08º\x03s\x1b t\x81-\x8eÄ.\x93mõî·¾7\x90|\x13Ô®\x0f,bTa§õ\x0b "åÓ\x13eïý7Ä½ù*\x04.ú¹R\x13q\x8b¶é½1\x10\x85Îyã´±\x82\x04![\x8a\x9fEï K\x05¬3¹àík¡n\x07´\x8a>Qú\x11vóD­\x83uëk\x90¥\x1f¨[\x1c7|5&*@\x86\x14osô\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04Àdµ\x1b?b\x1d`z=\x9c\x9aºdÓ\x1e\x07ÈCK\x82Ï\x9egÆ\x18\x9b\x86+¼q\x18i\x85^\x80\x97_\x04;Ø±Â¶qyðv:®p´49\x19_Ò<©\x98$\x8b)\x03!Ü\x8bGÐ&\x94!\x95g|M@ôjW±\x94|ÄNÝI\x1eÏ§<àð\x0fáÕ\x9f¢\x08 \x9d¬»Éó\x09¸\x85\x8c+\x04¬\x8f\x1a\x10ê\x97_ñø¶ ) ½3y\x10\x85¬z(\x8cs\\\x00ÿG\x11>\x1bZï\x00jö\\våÑ\x08\x1c×r{C¼-\x89nXi9î\x130NYpãð»\x1d÷\x93j¶b\x82\x1a\x86y×¤\x1e\x8c\x9fÞ\x140\x18Å£Ï+\x8d@·6"`\x0cs\x99ªC\x00¾xfxYÌ\x8aæ\x12Ã\x9eq\x9e\x9f!\x0biR\x95ãûz\x87Ä\x0c~¹1l¡\x1f\x19¸\x8djA\x97Ü ÀrÕN»\x16&ò#§\x83)\x1fÒhnD [0m" 400 -
+2025-05-26 16:56:33,755 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version ('ÚÁ\x16ja\x1a\x93ì')
+2025-05-26 16:56:33,756 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03¬äg/7L\x99³cpq×ï¾\x14ö\x84-·`éoU\x1d¬8þîY\x1d\x8fL dlÁ\x1cÚÁ\x16ja\x1a\x93ì[0m" 400 -
+2025-05-26 16:56:33,758 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version ('7')
+2025-05-26 16:56:33,758 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x11#Óað9Ø\x95T²Ó$ªpvb+¦Çì\x02ÒX¹v?èJ®Á.Ð \x88\x94dp\x8b³Q@;lÓ\x88\x1d\x87\x94\x04x¢Ú\x03Èoéá,®'@3kÑ\x00\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x8a\x8a\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04À>z \x7f¼\x01ÕW\x83_¡6òxy\x86P\x17\x06û\x07\x81ÃÍ\x81D\x93$§\x91&y\x8a·¼S\x80Ü\x05V\x18¯\x06i\x0e6æU\x1fCÏ\x8bêÃ)%\x8bÕv»ºx\x85\x83ÅLÞæD¢3\x0dG\x18||Ó|ºÅ\x86ú\x8cÀEw²K2©\x96¹d=ã79C? ÜaõàfÌ\x99\x11±µ¯(*¬døµ\x7fW!xa¡q\x80\x9e\x09\x12\x80Á\x82\x12¡²§Æ\x11\x18üJ\x18\x0b7[0m" 400 -
+2025-05-26 16:56:33,759 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] code 400, message Bad request version ('äûH¼3@¦')
+2025-05-26 16:56:33,759 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:33] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x10\x95\x01\x7f\x892¡Ìêcyôô\x1fAjð4Ä+éÔ¹}[¬\x17\x8dS­\x05¸ \x05UÐ5±ªS]£ÿîóË\x05¹.ÆîYPÜ|\x16$b\x87Ñ=2ê¡\x01\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x00º\x00\x00\x01\x00\x01\x12\x00 ZÉ\x8bÀÛ% äûH¼3@¦ [0m" 400 -
+2025-05-26 16:56:36,000 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x9a\x9a\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x12\x00\x00\x00#\x00\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04ÀÎGÄ')
+2025-05-26 16:56:36,001 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x1fÚLÔÎ\x99\x9e\x86Ù\x13+à\x04´¡fä+¾Wï¯ióä\x1b\x95\x82\x9d\x030³ ë\x15ô\x8aÂPpO\x1e\x05u\x87ÙmGð\x8en5\x111rÌý;©\x82\x8bü²Kv\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x9a\x9a\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x12\x00\x00\x00#\x00\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04ÀÎGÄ[0m" 400 -
+2025-05-26 16:56:36,005 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request version ('ÅÒ\x14hJ»\x9c;d|ã³xÃF\x99×\x94:÷\x90\x87qy\x9f\x02½3¥\x87fX')
+2025-05-26 16:56:36,006 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x11\x878r?ü²O¯(È3\x14ïI\x90Í\x8f\x9d&\x92~{á<\x0e3¬ZØ\x96ø ~\x08+zG\x7fNÊpkÏLn;CÆ\x83ÕX\x15ë\x9a\x1eBégãh^ \x07»\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S::\x00\x00\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04À£\x19\x87Ý\x98>þûT×è+²Y\x0e\x06ùÎ\x94º±m\x13\x04ÑÃAÕQUû,\x91@ê\x01wC¹êL)ß,\x17Ã\x006)¢@úbTö4¥íÔ\x93õTv\x88|m\x1fø° ÷Sÿ \x8bêÄ3\x14*CãË(Ô\x08Pf¤Ë\x135I½\x12Pí\x95Y8\x91\x11\x0c×¨â\x9a)%\x93qùl®hñ¤Çâ·Ç÷\\\x03Õ`ñ¬l\x9bfCs±±BÚaÖÊ\x05\x8cð\x9c\x147bSÐ\x85mp\x961ØtxJ\x9f5¬)±Q3Ï¶Å2¬k\x8b\x1b\\OéT\x011*\x13´|¥rÇb\x88/\x9f\x93&¿V\x92Ì\x10x\x18\x851"\x1a}\x80zÌAê\\=dÂ\x9eÔ\x0b³ì\x92C¼\x8ag+-\x97BXÿØ.òè}é×$\x8fÙjz\x90\x90ò\x9cQõv\x1aT\x83³VB¼sR,§\x83³\x90ADK\x19\x0d_\x9c223¡\x1bó+ÚÅ!I\x06$V¤$\x04ø\x97ßÅ\x85t&H(H!²ô"ÃÇk\x96\x03Îñ26d[GFû\x0e\x9b³\x9aHâ\x13®Ãl\x1a\x9a\x96\x03´\x9e/F¬5 ¿AÚ¶%\x86¦p`\x8cz©sÂÅ\x0eÑ\x92Î\x00ñÉô\x0c´\x07\x11E¡@4_h\x8b$a\x1e±õ\x09ê#\x05\x1bx¥\x90\x09!sã±B:\x1c\x88Ùº\x08\x00¿ÇzLl ~zÙz\x08ÃÈÙ¢[*\x9b»â\x04JÞW\x1c\x1bt}\x07e`A$gõ\x93\x90É:»±û9n\x0b\x1cl×*\x93\x9cZ¡r\x98rÂ½HË{©%\x94ñÚ\x9e²e\x09K\x13DPc\x8cß\x86]\x1dc c\x1cÉQ\x01\x00vv\x10\x16\x08\x10¤ê\x8e°8@cËÂ\x8d¤\x8b=óv®¶\x0cÅÒ\x14hJ»\x9c;d|ã³xÃF\x99×\x94:÷\x90\x87qy\x9f\x02½3¥\x87fX[0m" 400 -
+2025-05-26 16:56:36,031 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x9a\x9a\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04í')
+2025-05-26 16:56:36,032 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03I\x0eã£ó\x94¼ÎÂÝËûõýÏ\x87E\x14b \x04\x0dªµ¦\x0dÌ[\x16\x90\x92\x85 %±\x84\x03\x0b\x1d(É\x8dýp¼Ì±}]mö\x00*\x89AeoSÊ\x8fØF\x8b½ú\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x9a\x9a\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04í[0m" 400 -
+2025-05-26 16:56:36,033 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Ë\x91\xad')
+2025-05-26 16:56:36,033 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Ë\x91­[0m" 400 -
+2025-05-26 16:56:36,034 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00\x00-\x00\x02\x01\x01\x00')
+2025-05-26 16:56:36,035 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x8eR\x95\x97%\x17ïöR%"KY\x9bã\x84éþ\x11\x16.½-\x9e\x16\x8dÿÆ ó:u â2W\x19õ¢y\x05Øàm[y@j\x0c|\x17¬öFÜ\x9at©Ýl²\x00pIs\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00\x00-\x00\x02\x01\x01\x00[0m" 400 -
+2025-05-26 16:56:36,036 [ERROR] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] code 400, message Bad request version ('TµÏuK°Ò?\x95\x98ÚB-R¾cs')
+2025-05-26 16:56:36,036 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:36] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03µ\x8c´ö¶\x17\x82\x08-Ý×\x94ÀwM6\x9eLÉ£\x93Kö\x83Ê\x93Ë)Ô\x0d­=  \x10j\x814µ\x99o Ø\x7f\x1bïðã½OORi_%dwÆ-þÈâ\\[¹\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ªª\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ºº\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x014\x00 \x1bÔù_"³H¢\x89L!)ç\x8e\x14éWäÁ=~\x10D¡Ë~h¢\x16\x929(\x00\x90Q\x02ÒöÅ\x1d'Ð÷\x98~{6$Q\x1d\x103ÒäxÞº²}°æÓ?r&£\x90ôVôM\x06q\x12ÛÓÏ\x04oèx\x1d &wÑáK-i³:ÉÎyk\x9d\\\x19^ÛÂ\x82?,Ù\x9cTÒ\x02â+-\x99Oa\x9c£\x8f:MÜ¤xD\x82\x0d,\x0e\x81ÖZà TµÏuK°Ò?\x95\x98ÚB-R¾cs[0m" 400 -
+2025-05-26 16:56:55,778 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:55] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 16:56:55,928 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:55] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 16:56:55,931 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:55] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 16:56:56,013 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 16:56:56] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=zLR0uiKX8wvFEBfhlJhc HTTP/1.1" 200 -
+2025-05-26 17:20:26,994 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 17:20:26,994 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 17:20:27,022 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 17:20:27,023 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 17:20:27,024 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 17:20:27,024 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (OPTIONS, GET, HEAD) -> prometheus_metrics>])
+2025-05-26 17:20:27,063 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 17:20:27,064 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 17:20:27,066 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 17:20:29,318 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 17:20:29,318 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 17:20:29,341 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 17:20:29,341 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 17:20:29,342 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 17:20:29,342 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 17:20:29,342 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/' (HEAD, OPTIONS, GET) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, OPTIONS, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, OPTIONS, GET) -> api.secure_endpoint>])
+2025-05-26 17:20:29,356 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 17:20:29,361 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 17:21:48,417 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 17:21:48] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+2025-05-26 17:21:48,656 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 17:21:48] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-26 17:21:48,664 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 17:21:48] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-26 17:21:48,758 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 17:21:48] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=olsNYi0TwSdsnzRNRU4c HTTP/1.1" 200 -
+2025-05-26 18:42:10,973 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 18:42:11,344 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 18:42:39,815 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 18:42:39,815 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 18:42:39,997 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 18:42:39,998 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 18:42:39,998 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 18:42:39,998 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 18:42:39,998 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>])
+2025-05-26 18:42:40,047 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 18:42:40,051 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 18:43:18,124 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 18:43:18,124 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 18:43:18,149 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 18:43:18,149 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 18:43:18,149 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 18:43:18,149 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/metrics' (GET, HEAD, OPTIONS) -> prometheus_metrics>])
+2025-05-26 18:43:18,206 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 18:43:18,207 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 18:43:18,209 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 18:43:20,381 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 18:43:20,381 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 18:43:20,408 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 18:43:20,408 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 18:43:20,408 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 18:43:20,409 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 18:43:20,409 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>])
+2025-05-26 18:43:20,424 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 18:43:20,428 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 18:43:57,107 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:43:57] "GET /home HTTP/1.1" 200 -
+2025-05-26 18:43:57,127 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:43:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:44:05,767 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:05] "GET /home HTTP/1.1" 200 -
+2025-05-26 18:44:05,783 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:44:08,103 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:08] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 18:44:08,114 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:08] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:44:33,282 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:33] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:44:33,296 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:44:33] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:46:45,451 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:46:45] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:46:45,471 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:46:45] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:46:57,761 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:46:57] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:46:57,777 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:46:57] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:48:04,977 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:48:04] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:48:04,994 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:48:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:49:14,179 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:49:14] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:49:14,196 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:49:14] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:49:26,501 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:49:26] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:49:26,516 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:49:26] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:53:57,074 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 18:53:57,075 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 18:53:57,096 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 18:53:57,096 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 18:53:57,096 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 18:53:57,097 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, HEAD, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, HEAD, GET) -> api.secure_endpoint>,
+ <Rule '/metrics' (OPTIONS, HEAD, GET) -> prometheus_metrics>])
+2025-05-26 18:53:57,126 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 18:53:57,127 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 18:53:57,128 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 18:53:59,355 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 18:53:59,356 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 18:53:59,381 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 18:53:59,382 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 18:53:59,382 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 18:53:59,383 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 18:53:59,383 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, HEAD, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, HEAD, GET) -> api.secure_endpoint>])
+2025-05-26 18:53:59,400 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 18:53:59,404 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 18:54:49,963 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:49] "GET /home HTTP/1.1" 200 -
+2025-05-26 18:54:49,979 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:49] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:54:58,707 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:58] "GET /home HTTP/1.1" 200 -
+2025-05-26 18:54:58,721 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:58] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:54:59,793 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:59] "GET /home HTTP/1.1" 200 -
+2025-05-26 18:54:59,812 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:54:59] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:55:01,473 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:01] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 18:55:01,486 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:01] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:55:27,778 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:27] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:55:27,794 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:55:36,801 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:36] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:55:36,819 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:36] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:55:47,997 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:47] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:55:48,012 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:55:48] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:56:05,271 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:05] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:56:05,292 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:56:21,464 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:21] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:56:21,476 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:21] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:56:41,794 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:41] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:56:41,811 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:41] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:56:56,545 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:56] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:56:56,561 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:56:56] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:57:11,899 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:57:11] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:57:11,915 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:57:11] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 18:57:24,822 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:57:24] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 18:57:24,838 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 18:57:24] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:03:33,108 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:03:33,108 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:03:33,135 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:03:33,136 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:03:33,136 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:03:33,136 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (OPTIONS, GET, HEAD) -> prometheus_metrics>])
+2025-05-26 19:03:33,170 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 19:03:33,170 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 19:03:33,172 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 19:03:35,669 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:03:35,669 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:03:35,694 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 19:03:35,694 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:03:35,695 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:03:35,696 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:03:35,696 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>])
+2025-05-26 19:03:35,713 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 19:03:35,717 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 19:04:05,503 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:04:05] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:04:05,519 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:04:05] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:13:57,225 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:13:57,225 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:13:57,251 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:13:57,251 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:13:57,252 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:13:57,252 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/metrics' (HEAD, GET, OPTIONS) -> prometheus_metrics>])
+2025-05-26 19:13:57,288 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 19:13:57,289 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 19:13:57,291 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 19:13:59,567 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:13:59,568 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:13:59,607 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 19:13:59,607 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:13:59,608 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:13:59,608 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:13:59,608 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>])
+2025-05-26 19:13:59,622 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 19:13:59,626 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 19:14:20,670 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:20] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:14:20,693 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:20] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:14:25,360 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:25] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:14:25,378 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:25] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:14:27,090 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:27] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 19:14:27,104 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:14:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:15:07,485 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:15:07] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:15:07,498 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:15:07] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:16:57,387 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:16:57,388 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:16:57,469 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:16:57,469 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:16:57,470 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:16:57,470 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/metrics' (GET, HEAD, OPTIONS) -> prometheus_metrics>])
+2025-05-26 19:16:57,507 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 19:16:57,508 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 19:16:57,512 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 19:17:00,278 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:17:00,278 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:17:00,300 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 19:17:00,301 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:17:00,301 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:17:00,301 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:17:00,301 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>])
+2025-05-26 19:17:00,316 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 19:17:00,319 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 19:17:06,458 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:17:06] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:17:06,482 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:17:06] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-05-26 19:20:09,623 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 19:20:09,894 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 19:20:12,578 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:20:12,579 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:20:12,607 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 19:20:12,608 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:20:12,608 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:20:12,608 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:20:12,608 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, HEAD, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, HEAD, GET) -> api.secure_endpoint>])
+2025-05-26 19:20:12,625 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 19:20:12,630 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 19:21:03,862 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:21:03,862 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:21:03,885 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:21:03,885 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:21:03,886 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:21:03,886 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (GET, OPTIONS, HEAD) -> prometheus_metrics>])
+2025-05-26 19:21:03,916 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 19:21:03,916 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 19:21:03,919 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 19:21:06,128 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 19:21:06,129 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 19:21:06,152 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 19:21:06,153 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 19:21:06,153 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 19:21:06,154 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 19:21:06,154 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>])
+2025-05-26 19:21:06,167 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 19:21:06,171 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 19:21:45,281 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:21:45] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:21:45,486 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:21:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-26 19:22:14,057 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:22:14] "GET /home HTTP/1.1" 200 -
+2025-05-26 19:22:14,076 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:22:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:22:15,744 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:22:15] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 19:22:15,760 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:22:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:23:34,931 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:23:34] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:23:34,946 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:23:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:23:49,324 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:23:49] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:23:49,338 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:23:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:24:06,778 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:24:06] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:24:06,798 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:24:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:24:48,027 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:24:48] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:24:48,046 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:24:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:25:06,955 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:25:06] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:25:06,970 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:25:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 19:25:17,008 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:25:17] "POST /predict_form HTTP/1.1" 200 -
+2025-05-26 19:25:17,025 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 19:25:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 20:38:42,430 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 20:38:42,896 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 20:38:46,043 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 20:38:46,043 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 20:38:46,077 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 20:38:46,077 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 20:38:46,078 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 20:38:46,078 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 20:38:46,078 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>])
+2025-05-26 20:38:46,097 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 20:38:46,104 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 20:53:15,353 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\forms.py', reloading
+2025-05-26 20:53:15,642 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 20:53:18,382 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 20:53:18,383 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 20:53:18,413 [DEBUG] app: Metrics are disabled when run in the Flask development server with reload enabled. Set the environment variable DEBUG_METRICS=1 to enable them anyway.
+2025-05-26 20:53:18,414 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-26 20:53:18,414 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-26 20:53:18,415 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 20:53:18,415 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>])
+2025-05-26 20:53:18,436 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 20:53:18,441 [INFO] werkzeug:  * Debugger PIN: 904-705-872
+2025-05-26 20:54:10,652 [INFO] werkzeug:  * Detected change in 'C:\\Users\\Charles Keter\\Documents\\PhishClassifier\\api\\app.py', reloading
+2025-05-26 20:54:10,977 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 22:54:38,887 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 22:54:40,947 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 22:54:43,331 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-26 23:02:12,698 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 23:02:14,761 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 23:02:16,879 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-26 23:05:20,654 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 23:05:22,736 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 23:05:24,856 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-26 23:05:26,913 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-26 23:05:28,966 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 23:05:31,012 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, HEAD, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, HEAD, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/oauth2-redirect.html' (GET, HEAD, OPTIONS) -> flasgger.oauth_redirect>,
+ <Rule '/apidocs/index.html' (GET, HEAD, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, HEAD, OPTIONS) -> flasgger.apispec_1>])
+2025-05-26 23:05:33,199 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-26 23:05:35,234 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-26 23:05:37,311 [INFO] werkzeug:  * Restarting with stat
+2025-05-26 23:05:42,869 [INFO] PhishClassifier: Logging has been configured.
+2025-05-26 23:05:44,922 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-26 23:05:47,005 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-26 23:05:49,064 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-26 23:05:51,117 [INFO] PhishClassifier: Registered Routes:
+2025-05-26 23:05:53,167 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/oauth2-redirect.html' (HEAD, GET, OPTIONS) -> flasgger.oauth_redirect>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-26 23:05:55,221 [WARNING] werkzeug:  * Debugger is active!
+2025-05-26 23:05:57,290 [INFO] werkzeug:  * Debugger PIN: 840-582-113
+2025-05-26 23:06:33,882 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:06:33] "GET /home HTTP/1.1" 200 -
+2025-05-26 23:06:36,145 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:06:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-26 23:06:49,053 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries
+2025-05-26 23:07:09,965 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:07:09] "[32mGET /predict_form HTTP/1.1[0m" 302 -
+2025-05-26 23:07:12,096 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:07:12] "GET /login?next=/predict_form HTTP/1.1" 200 -
+2025-05-26 23:07:14,181 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:07:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:08:05,945 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:05] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-05-26 23:08:07,999 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:07] "GET /home HTTP/1.1" 200 -
+2025-05-26 23:08:10,074 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:08:20,845 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [3 skipped]
+2025-05-26 23:08:30,047 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:30] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 23:08:32,121 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:08:32,189 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:32] "GET /static/js/predict.js HTTP/1.1" 200 -
+2025-05-26 23:08:56,620 [ERROR] PhishClassifier: Error scheduling task: 'NoneType' object has no attribute 'Redis'
+2025-05-26 23:08:59,219 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:08:59] "[35m[1mPOST /predict_form HTTP/1.1[0m" 500 -
+2025-05-26 23:09:09,891 [ERROR] PhishClassifier: Error scheduling task: 'NoneType' object has no attribute 'Redis'
+2025-05-26 23:09:11,931 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:11] "[35m[1mPOST /predict_form HTTP/1.1[0m" 500 -
+2025-05-26 23:09:23,494 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:23] "GET /feedback HTTP/1.1" 200 -
+2025-05-26 23:09:25,555 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:09:27,505 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [3 skipped]
+2025-05-26 23:09:38,155 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:38] "[32mPOST /feedback HTTP/1.1[0m" 302 -
+2025-05-26 23:09:40,231 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:40] "GET /feedback HTTP/1.1" 200 -
+2025-05-26 23:09:42,307 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:09:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:10:03,383 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:03] "GET /home HTTP/1.1" 200 -
+2025-05-26 23:10:05,438 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:10:16,229 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-26 23:10:18,303 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:18] "GET /home HTTP/1.1" 200 -
+2025-05-26 23:10:20,395 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:10:28,827 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:28] "GET /login HTTP/1.1" 200 -
+2025-05-26 23:10:30,908 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:10:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:10:31,211 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [3 skipped]
+2025-05-26 23:12:43,991 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:12:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-26 23:12:46,054 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:12:46] "GET /home HTTP/1.1" 200 -
+2025-05-26 23:12:48,146 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:12:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:12:58,256 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [1 skipped]
+2025-05-26 23:13:04,388 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:13:04] "[35m[1mGET /admin_dashboard HTTP/1.1[0m" 500 -
+2025-05-26 23:13:06,510 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:13:06] "GET /admin_dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-26 23:13:06,534 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:13:06] "GET /admin_dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-26 23:13:10,701 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:13:10] "GET /admin_dashboard?__debugger__=yes&cmd=resource&f=console.png&s=ShPeuoeIUAY6re3FdbwV HTTP/1.1" 200 -
+2025-05-26 23:13:12,768 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:13:12] "GET /admin_dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-26 23:22:28,825 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:22:28] "GET /admin_dashboard HTTP/1.1" 200 -
+2025-05-26 23:22:30,893 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:22:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:22:43,488 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 2 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [2 skipped]
+2025-05-26 23:22:44,090 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:22:44] "GET /predict_form HTTP/1.1" 200 -
+2025-05-26 23:22:47,617 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:22:47] "[36mGET /static/js/predict.js HTTP/1.1[0m" 304 -
+2025-05-26 23:22:47,622 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:22:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-26 23:23:07,613 [ERROR] PhishClassifier: Error scheduling task: 'NoneType' object has no attribute 'Redis'
+2025-05-26 23:23:09,663 [INFO] werkzeug: 127.0.0.1 - - [26/May/2025 23:23:09] "[35m[1mPOST /predict_form HTTP/1.1[0m" 500 -
+2025-05-27 14:32:14,821 [INFO] PhishClassifier: Logging has been configured.
+2025-05-27 14:32:14,822 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-27 14:32:14,873 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-27 14:32:14,874 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-27 14:32:14,881 [INFO] PhishClassifier: Registered Routes:
+2025-05-27 14:32:14,882 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, HEAD, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, HEAD, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, HEAD, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, HEAD, OPTIONS) -> flasgger.apispec_1>])
+2025-05-27 14:32:14,901 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-27 14:32:14,902 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-05-27 14:32:14,907 [INFO] werkzeug:  * Restarting with stat
+2025-05-27 14:32:17,960 [INFO] PhishClassifier: Logging has been configured.
+2025-05-27 14:32:17,970 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-27 14:32:18,013 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-27 14:32:18,014 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-27 14:32:18,019 [INFO] PhishClassifier: Registered Routes:
+2025-05-27 14:32:18,019 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (OPTIONS, GET, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (OPTIONS, GET, HEAD) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (OPTIONS, GET, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (OPTIONS, GET, HEAD) -> flasgger.apispec_1>])
+2025-05-27 14:32:18,026 [WARNING] werkzeug:  * Debugger is active!
+2025-05-27 14:32:18,034 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-27 17:32:47,719 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:32:47] "GET / HTTP/1.1" 200 -
+2025-05-27 17:33:02,367 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 1 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [2 skipped]
+2025-05-27 17:33:06,525 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:06] "GET /home HTTP/1.1" 200 -
+2025-05-27 17:33:08,633 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-27 17:33:23,631 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-27 17:33:25,734 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:25] "GET /home HTTP/1.1" 200 -
+2025-05-27 17:33:27,819 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-27 17:33:47,111 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:47] "GET /login HTTP/1.1" 200 -
+2025-05-27 17:33:49,183 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-27 17:34:01,370 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-27 17:34:03,462 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:03] "GET /home HTTP/1.1" 200 -
+2025-05-27 17:34:04,931 [ERROR] ddtrace.internal.writer.writer: failed to send, dropping 2 traces to intake at http://localhost:8126/v0.4/traces after 3 retries [3 skipped]
+2025-05-27 17:34:05,547 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-27 17:34:16,812 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:16] "GET /predict_form HTTP/1.1" 200 -
+2025-05-27 17:34:18,877 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-27 17:34:18,942 [INFO] werkzeug: 127.0.0.1 - - [27/May/2025 17:34:18] "[36mGET /static/js/predict.js HTTP/1.1[0m" 304 -
+2025-05-27 19:55:42,050 [INFO] werkzeug:  * Detected change in '/app/tasks.py', reloading
+2025-05-27 19:55:42,182 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-27 19:55:44,792 [INFO] werkzeug:  * Restarting with stat
+2025-05-27 19:55:50,485 [INFO] PhishClassifier: Logging has been configured.
+2025-05-27 19:55:50,486 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-27 19:55:50,538 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-27 19:55:50,540 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-27 19:55:50,545 [INFO] PhishClassifier: Registered Routes:
+2025-05-27 19:55:50,547 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-27 19:55:50,554 [WARNING] werkzeug:  * Debugger is active!
+2025-05-27 19:55:50,562 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-28 05:07:10,472 [INFO] werkzeug:  * Detected change in '/app/tasks.py', reloading
+2025-05-28 05:07:10,557 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-28 05:07:13,308 [INFO] werkzeug:  * Restarting with stat
+2025-05-28 05:07:19,758 [INFO] PhishClassifier: Logging has been configured.
+2025-05-28 05:07:19,758 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-28 05:07:19,790 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-28 05:07:19,791 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-28 05:07:19,796 [INFO] PhishClassifier: Registered Routes:
+2025-05-28 05:07:19,797 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, HEAD, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, HEAD, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, HEAD, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, HEAD, OPTIONS) -> flasgger.apispec_1>])
+2025-05-28 05:07:19,814 [WARNING] werkzeug:  * Debugger is active!
+2025-05-28 05:07:19,818 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 10:39:25,234 [INFO] werkzeug:  * Detected change in '/app/train_model.py', reloading
+2025-05-29 10:39:25,382 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 10:39:28,548 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 10:39:38,132 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 10:39:38,133 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 10:39:38,223 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 10:39:38,225 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 10:39:38,235 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 10:39:38,237 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, GET, HEAD) -> static>,
+ <Rule '/' (OPTIONS, GET, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, GET, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, GET, HEAD) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (OPTIONS, GET, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (OPTIONS, GET, HEAD) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (OPTIONS, GET, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (OPTIONS, GET, HEAD) -> flasgger.apispec_1>])
+2025-05-29 10:39:38,253 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 10:39:38,261 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 10:48:57,317 [INFO] werkzeug:  * Detected change in '/app/verify_model.py', reloading
+2025-05-29 10:48:57,321 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 10:48:58,208 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 10:49:03,027 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 10:49:03,028 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 10:49:03,057 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 10:49:03,058 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 10:49:03,067 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 10:49:03,068 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 10:49:03,080 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 10:49:03,082 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 10:58:03,574 [INFO] werkzeug:  * Detected change in '/app/train_model.py', reloading
+2025-05-29 10:58:03,576 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 10:58:04,342 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 10:58:08,425 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 10:58:08,426 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 10:58:08,508 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 10:58:08,509 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 10:58:08,513 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 10:58:08,514 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+ <Rule '/' (HEAD, OPTIONS, GET) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, OPTIONS, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, OPTIONS, GET) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, OPTIONS, GET) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, OPTIONS, GET) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, OPTIONS, GET) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, OPTIONS, GET) -> flasgger.apispec_1>])
+2025-05-29 10:58:08,522 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 10:58:08,525 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:37:17,538 [INFO] werkzeug:  * Detected change in '/app/models/feedback.py', reloading
+2025-05-29 11:37:17,559 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:37:20,175 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:37:26,473 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:37:26,474 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:37:26,518 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:37:26,518 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:37:26,523 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:37:26,524 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 11:37:26,532 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:37:26,536 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:50:10,930 [INFO] werkzeug:  * Detected change in '/app/models/user.py', reloading
+2025-05-29 11:50:10,933 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:50:11,866 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:50:16,643 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:50:16,644 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:50:16,701 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:50:16,702 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:50:16,716 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:50:16,718 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, HEAD, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, HEAD, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, HEAD, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, HEAD, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 11:50:16,732 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:50:16,736 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:50:46,493 [INFO] werkzeug:  * Detected change in '/app/models/models.py', reloading
+2025-05-29 11:50:46,494 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:50:47,694 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:50:50,783 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:50:50,784 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:50:50,813 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:50:50,814 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:50:50,817 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:50:50,818 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, OPTIONS, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, OPTIONS, HEAD) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, OPTIONS, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, OPTIONS, HEAD) -> flasgger.apispec_1>])
+2025-05-29 11:50:50,826 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:50:50,828 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:52:35,831 [INFO] werkzeug:  * Detected change in '/app/models/prediction.py', reloading
+2025-05-29 11:52:35,833 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:52:36,691 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:52:40,652 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:52:40,653 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:52:40,683 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:52:40,685 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:52:40,690 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:52:40,691 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 11:52:40,697 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:52:40,699 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:53:52,301 [INFO] werkzeug:  * Detected change in '/app/models/create_db.py', reloading
+2025-05-29 11:53:52,302 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:53:53,074 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:53:57,375 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:53:57,375 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:53:57,399 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:53:57,401 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:53:57,408 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:53:57,408 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 11:53:57,414 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:53:57,417 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 11:57:02,999 [INFO] werkzeug:  * Detected change in '/app/models/create_db.py', reloading
+2025-05-29 11:57:03,001 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 11:57:03,766 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 11:57:07,683 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 11:57:07,684 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 11:57:07,718 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 11:57:07,720 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 11:57:07,727 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 11:57:07,728 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/' (OPTIONS, HEAD, GET) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (OPTIONS, HEAD, GET) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (OPTIONS, HEAD, GET) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (OPTIONS, HEAD, GET) -> flasgger.static>,
+ <Rule '/apidocs/' (OPTIONS, HEAD, GET) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (OPTIONS, HEAD, GET) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (OPTIONS, HEAD, GET) -> flasgger.apispec_1>])
+2025-05-29 11:57:07,740 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 11:57:07,743 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 12:03:04,425 [INFO] werkzeug:  * Detected change in '/app/api/app.py', reloading
+2025-05-29 12:03:04,440 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 12:03:05,911 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 12:03:10,441 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 12:03:10,442 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 12:03:10,475 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 12:03:10,476 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 12:03:10,479 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 12:03:10,480 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 12:03:10,490 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 12:03:10,493 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 15:25:51,303 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 15:25:51,305 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 15:25:51,550 [INFO] PhishClassifier: Prometheus monitoring is enabled.
+2025-05-29 15:25:51,550 [WARNING] PhishClassifier: Datadog tracer is not enabled. To enable, install 'ddtrace'.
+2025-05-29 15:25:51,554 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 15:25:51,554 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/metrics' (GET, OPTIONS, HEAD) -> prometheus_metrics>,
+ <Rule '/flasgger_static/<filename>' (GET, OPTIONS, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, OPTIONS, HEAD) -> flasgger.apidocs>,
+ <Rule '/oauth2-redirect.html' (GET, OPTIONS, HEAD) -> flasgger.oauth_redirect>,
+ <Rule '/apidocs/index.html' (GET, OPTIONS, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, OPTIONS, HEAD) -> flasgger.apispec_1>])
+2025-05-29 14:46:37,366 [INFO] werkzeug:  * Detected change in '/app/tasks.py', reloading
+2025-05-29 14:46:37,460 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 14:46:40,276 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 14:46:47,091 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 14:46:47,092 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 14:46:47,191 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 14:46:47,193 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 14:46:47,205 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 14:46:47,206 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, HEAD, OPTIONS) -> static>,
+ <Rule '/' (GET, HEAD, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, HEAD, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, HEAD, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, HEAD, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, HEAD, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, HEAD, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, HEAD, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 14:46:47,224 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 14:46:47,235 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 14:55:14,508 [INFO] werkzeug:  * Detected change in '/app/enhanced_features.py', reloading
+2025-05-29 14:55:14,512 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 14:55:15,442 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 14:55:19,768 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 14:55:19,769 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 14:55:19,833 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 14:55:19,834 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 14:55:19,843 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 14:55:19,845 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 14:55:19,866 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 14:55:19,870 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 14:56:10,105 [INFO] werkzeug:  * Detected change in '/app/api/classifier.py', reloading
+2025-05-29 14:56:10,107 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 14:56:11,103 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 14:56:14,739 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 14:56:14,740 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 14:56:14,770 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 14:56:14,771 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 14:56:14,774 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 14:56:14,775 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 14:56:14,783 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 14:56:14,785 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 14:56:51,982 [INFO] werkzeug:  * Detected change in '/app/tasks.py', reloading
+2025-05-29 14:56:51,984 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 14:56:52,911 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 14:56:57,180 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 14:56:57,180 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 14:56:57,201 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 14:56:57,202 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 14:56:57,207 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 14:56:57,208 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, OPTIONS, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, OPTIONS, HEAD) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, OPTIONS, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, OPTIONS, HEAD) -> flasgger.apispec_1>])
+2025-05-29 14:56:57,222 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 14:56:57,224 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 15:01:16,747 [INFO] werkzeug:  * Detected change in '/app/api/routes/feedback.py', reloading
+2025-05-29 15:01:16,749 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 15:01:17,381 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 15:01:20,334 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 15:01:20,335 [INFO] PhishClassifier: Initializing PhishClassifier application.
+2025-05-29 15:01:20,356 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 15:01:20,357 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 15:01:20,361 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 15:01:20,361 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (HEAD, GET, OPTIONS) -> static>,
+ <Rule '/' (HEAD, GET, OPTIONS) -> api.home>,
+ <Rule '/predict' (POST, OPTIONS) -> api.predict>,
+ <Rule '/batch_predict' (POST, OPTIONS) -> api.batch_predict>,
+ <Rule '/api/entity' (POST, OPTIONS) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (HEAD, GET, OPTIONS) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (HEAD, GET, OPTIONS) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (HEAD, GET, OPTIONS) -> flasgger.static>,
+ <Rule '/apidocs/' (HEAD, GET, OPTIONS) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (HEAD, GET, OPTIONS) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (HEAD, GET, OPTIONS) -> flasgger.apispec_1>])
+2025-05-29 15:01:20,367 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 15:01:20,368 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 15:06:17,611 [INFO] werkzeug:  * Detected change in '/app/api/app.py', reloading
+2025-05-29 15:06:17,629 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 15:06:20,323 [INFO] werkzeug:  * Restarting with stat
+2025-05-29 15:06:26,396 [INFO] PhishClassifier: Logging has been configured.
+2025-05-29 15:06:26,397 [INFO] PhishClassifier: Initializing PhishClassifier application with enhanced features and feedback integration.
+2025-05-29 15:06:26,460 [WARNING] PhishClassifier: Prometheus monitoring is not enabled. To enable, install 'prometheus_flask_exporter'.
+2025-05-29 15:06:26,461 [INFO] PhishClassifier: Datadog tracer is enabled.
+2025-05-29 15:06:26,469 [INFO] PhishClassifier: Registered Routes:
+2025-05-29 15:06:26,471 [INFO] PhishClassifier: Map([<Rule '/static/<filename>' (GET, OPTIONS, HEAD) -> static>,
+ <Rule '/' (GET, OPTIONS, HEAD) -> api.home>,
+ <Rule '/predict' (OPTIONS, POST) -> api.predict>,
+ <Rule '/batch_predict' (OPTIONS, POST) -> api.batch_predict>,
+ <Rule '/api/entity' (OPTIONS, POST) -> api.create_entity>,
+ <Rule '/api/entity/<entity_id>' (GET, OPTIONS, HEAD) -> api.get_entity>,
+ <Rule '/api/secure-endpoint' (GET, OPTIONS, HEAD) -> api.secure_endpoint>,
+ <Rule '/flasgger_static/<filename>' (GET, OPTIONS, HEAD) -> flasgger.static>,
+ <Rule '/apidocs/' (GET, OPTIONS, HEAD) -> flasgger.apidocs>,
+ <Rule '/apidocs/index.html' (GET, OPTIONS, HEAD) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (GET, OPTIONS, HEAD) -> flasgger.apispec_1>])
+2025-05-29 15:06:26,485 [WARNING] werkzeug:  * Debugger is active!
+2025-05-29 15:06:26,489 [INFO] werkzeug:  * Debugger PIN: 119-552-217
+2025-05-29 15:12:35,040 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered
+2025-05-29 15:12:35,534 [INFO] ddtrace.internal.forksafe: before_in_child hook _sample_before_fork was unregistered without first being registered

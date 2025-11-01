@@ -1,0 +1,35 @@
+C:\Users\Charles Keter\Documents\PhishClassifier\env\Lib\site-packages\textstat\textstat.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Server initialized for threading.
+2025-10-19 12:18:22,905 INFO:Server initialized for threading.
+2025-10-19 12:18:22,906 INFO root: Starting PhishClassifier application
+Server initialized for threading.
+2025-10-19 12:18:24,973 INFO engineio.server: Server initialized for threading.
+2025-10-19 12:18:27,059 INFO root: Database tables created or verified
+2025-10-19 12:18:29,110 INFO root: prometheus_flask_exporter not installed or unavailable
+2025-10-19 12:18:31,149 INFO root: Datadog tracer not installed
+2025-10-19 12:18:33,200 INFO root: Swagger UI enabled, routes:
+Map([<Rule '/static/<filename>' (OPTIONS, HEAD, GET) -> static>,
+ <Rule '/health' (OPTIONS, HEAD, GET) -> health>,
+ <Rule '/ready' (OPTIONS, HEAD, GET) -> ready>,
+ <Rule '/api/' (OPTIONS, HEAD, GET) -> prediction.home>,
+ <Rule '/api/predict' (OPTIONS, POST) -> prediction.predict>,
+ <Rule '/api/batch_predict' (OPTIONS, POST) -> prediction.batch_predict>,
+ <Rule '/quarantine/export' (OPTIONS, HEAD, GET) -> reports.export_quarantine>,
+ <Rule '/admin/notifications' (OPTIONS, HEAD, GET) -> notifications.list_notifications>,
+ <Rule '/admin/notifications/create' (OPTIONS, POST, HEAD, GET) -> notifications.create_notification>,
+ <Rule '/admin/notifications/edit/<rule_id>' (OPTIONS, POST, HEAD, GET) -> notifications.edit_notification>,
+ <Rule '/admin/notifications/delete/<rule_id>' (OPTIONS, POST) -> notifications.delete_notification>,
+ <Rule '/trainer/' (OPTIONS, POST, HEAD, GET) -> trainer.train>,
+ <Rule '/flasgger_static/<filename>' (OPTIONS, HEAD, GET) -> flasgger.static>,
+ <Rule '/apidocs/' (OPTIONS, HEAD, GET) -> flasgger.apidocs>,
+ <Rule '/oauth2-redirect.html' (OPTIONS, HEAD, GET) -> flasgger.oauth_redirect>,
+ <Rule '/apidocs/index.html' (OPTIONS, HEAD, GET) -> flasgger.<lambda>>,
+ <Rule '/apispec_1.json' (OPTIONS, HEAD, GET) -> flasgger.apispec_1>])
+ * Serving Flask app 'api.app'
+ * Debug mode: off
+2025-10-19 12:18:35,268 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-10-19 12:18:37,302 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-19 12:19:20,723 INFO werkzeug: 127.0.0.1 - - [19/Oct/2025 12:19:20] "[35m[1mGET /ready HTTP/1.1[0m" 503 -
+2025-10-19 12:51:53,766 INFO werkzeug: 127.0.0.1 - - [19/Oct/2025 12:51:53] "[35m[1mGET /ready HTTP/1.1[0m" 503 -

@@ -1,0 +1,500 @@
+#14 331.2    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 86.2/86.2 kB 5.1 MB/s eta 0:00:00
+#14 331.4 Downloading databricks_sdk-0.67.0-py3-none-any.whl (718 kB)
+#14 331.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 718.4/718.4 kB 8.1 MB/s eta 0:00:00
+#14 331.6 Downloading exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+#14 331.8 Downloading fastapi-0.119.0-py3-none-any.whl (107 kB)
+#14 331.8    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 107.1/107.1 kB 4.6 MB/s eta 0:00:00
+#14 332.0 Downloading frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (231 kB)
+#14 332.0    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 231.1/231.1 kB 9.6 MB/s eta 0:00:00
+#14 332.2 Downloading fsspec-2025.9.0-py3-none-any.whl (199 kB)
+#14 332.2    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 199.3/199.3 kB 6.0 MB/s eta 0:00:00
+#14 332.4 Downloading gitpython-3.1.45-py3-none-any.whl (208 kB)
+#14 332.4    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 208.2/208.2 kB 7.7 MB/s eta 0:00:00
+#14 332.6 Downloading graphql_core-3.2.6-py3-none-any.whl (203 kB)
+#14 332.6    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 203.4/203.4 kB 11.8 MB/s eta 0:00:00
+#14 332.8 Downloading graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+#14 332.9 Downloading hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+#14 333.3    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 3.2/3.2 MB 7.6 MB/s eta 0:00:00
+#14 333.5 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#14 333.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 73.5/73.5 kB 7.4 MB/s eta 0:00:00
+#14 333.7 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#14 333.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 78.8/78.8 kB 6.4 MB/s eta 0:00:00
+#14 333.9 Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+#14 334.0 Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+#14 334.2 Downloading language_data-1.3.0-py3-none-any.whl (5.4 MB)
+#14 334.9    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 5.4/5.4 MB 7.4 MB/s eta 0:00:00
+#14 335.1 Downloading llvmlite-0.45.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (56.3 MB)
+#14 342.9    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 56.3/56.3 MB 7.2 MB/s eta 0:00:00
+#14 343.1 Downloading mcp-1.17.0-py3-none-any.whl (167 kB)
+#14 343.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 167.7/167.7 kB 6.4 MB/s eta 0:00:00
+#14 343.3 Downloading multidict-6.7.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+#14 343.3    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 246.7/246.7 kB 6.9 MB/s eta 0:00:00
+#14 343.5 Downloading openapi_core-0.19.5-py3-none-any.whl (106 kB)
+#14 343.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 106.6/106.6 kB 8.7 MB/s eta 0:00:00
+#14 343.7 Downloading openapi_pydantic-0.5.1-py3-none-any.whl (96 kB)
+#14 343.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 96.4/96.4 kB 7.1 MB/s eta 0:00:00
+#14 343.9 Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+#14 343.9    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 72.5/72.5 kB 11.2 MB/s eta 0:00:00
+#14 344.0 Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+#14 344.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 131.9/131.9 kB 5.6 MB/s eta 0:00:00
+#14 344.2 Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+#14 344.2    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 208.0/208.0 kB 6.8 MB/s eta 0:00:00
+#14 344.4 Downloading prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+#14 344.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 391.4/391.4 kB 7.5 MB/s eta 0:00:00
+#14 344.6 Downloading propcache-0.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (210 kB)
+#14 344.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 210.0/210.0 kB 6.5 MB/s eta 0:00:00
+#14 344.8 Downloading pyperclip-1.11.0-py3-none-any.whl (11 kB)
+#14 345.0 Downloading python_dotenv-1.1.1-py3-none-any.whl (20 kB)
+#14 345.1 Downloading python_engineio-4.12.3-py3-none-any.whl (59 kB)
+#14 345.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 59.6/59.6 kB 5.7 MB/s eta 0:00:00
+#14 345.4 Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+#14 345.5 Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+#14 346.8    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 243.4/243.4 kB 181.3 kB/s eta 0:00:00
+#14 347.0 Downloading rpds_py-0.27.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (384 kB)
+#14 347.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 384.1/384.1 kB 5.8 MB/s eta 0:00:00
+#14 347.2 Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+#14 347.3    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 485.8/485.8 kB 6.5 MB/s eta 0:00:00
+#14 347.4 Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+#14 347.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 44.4/44.4 kB 7.8 MB/s eta 0:00:00
+#14 347.6 Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+#14 348.2    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 3.3/3.3 MB 5.9 MB/s eta 0:00:00
+#14 348.3 Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+#14 348.5 Downloading uvicorn-0.37.0-py3-none-any.whl (67 kB)
+#14 348.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 68.0/68.0 kB 11.4 MB/s eta 0:00:00
+#14 348.7 Downloading yarl-1.22.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (365 kB)
+#14 348.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 365.8/365.8 kB 6.9 MB/s eta 0:00:00
+#14 348.9 Downloading mako-1.3.10-py3-none-any.whl (78 kB)
+#14 348.9    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 78.5/78.5 kB 7.3 MB/s eta 0:00:00
+#14 349.1 Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+#14 349.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 109.1/109.1 kB 9.0 MB/s eta 0:00:00
+#14 349.2 Downloading docstring_parser-0.17.0-py3-none-any.whl (36 kB)
+#14 349.4 Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+#14 349.5 Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+#14 349.6    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 62.8/62.8 kB 4.5 MB/s eta 0:00:00
+#14 349.7 Downloading google_auth-2.41.1-py2.py3-none-any.whl (221 kB)
+#14 349.8    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 221.3/221.3 kB 8.0 MB/s eta 0:00:00
+#14 349.9 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#14 350.1 Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+#14 350.2 Downloading jsonschema_path-0.3.4-py3-none-any.whl (14 kB)
+#14 350.4 Downloading marisa_trie-1.3.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (1.3 MB)
+#14 350.6    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 1.3/1.3 MB 6.0 MB/s eta 0:00:00
+#14 350.8 Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+#14 350.8    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 87.3/87.3 kB 8.6 MB/s eta 0:00:00
+#14 351.0 Downloading openapi_schema_validator-0.6.3-py3-none-any.whl (8.8 kB)
+#14 351.1 Downloading openapi_spec_validator-0.7.2-py3-none-any.whl (39 kB)
+#14 351.3 Downloading pydantic_settings-2.11.0-py3-none-any.whl (48 kB)
+#14 351.3    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 48.6/48.6 kB 5.8 MB/s eta 0:00:00
+#14 351.5 Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+#14 351.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 1.2/1.2 MB 6.5 MB/s eta 0:00:00
+#14 351.8 Downloading python_multipart-0.0.20-py3-none-any.whl (24 kB)
+#14 352.0 Downloading rich_rst-1.3.1-py3-none-any.whl (11 kB)
+#14 352.1 Downloading simple_websocket-1.1.0-py3-none-any.whl (13 kB)
+#14 352.3 Downloading sse_starlette-3.0.2-py3-none-any.whl (11 kB)
+#14 352.5 Downloading starlette-0.48.0-py3-none-any.whl (73 kB)
+#14 352.5    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 73.7/73.7 kB 7.1 MB/s eta 0:00:00
+#14 352.6 Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+#14 352.8 Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+#14 353.0 Downloading more_itertools-10.8.0-py3-none-any.whl (69 kB)
+#14 353.0    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 69.7/69.7 kB 5.7 MB/s eta 0:00:00
+#14 353.1 Downloading parse-1.20.2-py2.py3-none-any.whl (20 kB)
+#14 353.3 Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+#14 353.3    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 118.1/118.1 kB 6.0 MB/s eta 0:00:00
+#14 353.5 Downloading wcwidth-0.2.14-py2.py3-none-any.whl (37 kB)
+#14 353.7 Downloading lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (68 kB)
+#14 353.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 68.8/68.8 kB 7.6 MB/s eta 0:00:00
+#14 353.8 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+#14 354.0 Downloading pathable-0.4.4-py3-none-any.whl (9.6 kB)
+#14 354.2 Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+#14 354.2    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 181.3/181.3 kB 7.6 MB/s eta 0:00:00
+#14 354.4 Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+#14 354.5 Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+#14 354.7 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#14 354.8 Downloading docutils-0.22.2-py3-none-any.whl (632 kB)
+#14 354.9    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 632.7/632.7 kB 6.9 MB/s eta 0:00:00
+#14 355.1 Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+#14 355.2 Downloading wsproto-1.2.0-py3-none-any.whl (24 kB)
+#14 355.4 Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+#14 355.4    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 83.1/83.1 kB 5.3 MB/s eta 0:00:00
+#14 356.2 Building wheels for collected packages: Flasgger
+#14 356.2   Building wheel for Flasgger (setup.py): started
+#14 357.4   Building wheel for Flasgger (setup.py): finished with status 'done'
+#14 357.5   Created wheel for Flasgger: filename=flasgger-0.9.7.1-py2.py3-none-any.whl size=3865184 sha256=63f86b4071880122d695590d34f6ebaf7c797b491ed9af9a71c31d0e4e57d6f9
+#14 357.5   Stored in directory: /tmp/pip-ephem-wheel-cache-y30dw09u/wheels/da/2d/f6/c125d4b8701ac49fdb2abbfb978036c46d5ad64d2ffaa2ac34
+#14 357.5 Successfully built Flasgger
+#14 359.4 Installing collected packages: webencodings, pytz, pyperclip, parse, mpmath, cymem, zipp, xmltodict, wrapt, wcwidth, wasabi, vine, urllib3, tzdata, typing_extensions, tqdm, threadpoolctl, sympy, sqlparse, spacy-loggers, spacy-legacy, sniffio, smmap, smart-open, slicer, six, sentencepiece, safetensors, rpds-py, regex, redis, rapidfuzz, PyYAML, python-multipart, python-dotenv, pyphen, pyparsing, pygments, pycparser, pyasn1, pyarrow, protobuf, propcache, prometheus-client, pillow, pathable, packaging, numpy, networkx, murmurhash, multidict, msgpack, more-itertools, mistune, mdurl, MarkupSafe, marisa-trie, llvmlite, lazy-object-proxy, kiwisolver, joblib, itsdangerous, isodate, idna, httpx-sse, hf-xet, h11, gunicorn, greenlet, graphql-core, fsspec, frozenlist, fonttools, filelock, envier, docutils, docstring-parser, dnspython, cycler, colorama, cloudpickle, cloudpathlib, click, charset_normalizer, certifi, catalogue, cachetools, bytecode, blinker, billiard, bidict, attrs, annotated-types, aiohappyeyeballs, yarl, wtforms, wsproto, Werkzeug, uvicorn, typing-inspection, typer, textstat, srsly, sqlalchemy, scipy, rsa, rfc3339-validator, requests, referencing, python-dateutil, pydantic-core, pyasn1-modules, prompt-toolkit, preshed, opentelemetry-proto, numba, nltk, markdown-it-py, Mako, language-data, Jinja2, importlib_metadata, httpcore, graphql-relay, gitdb, fluent-logger, exceptiongroup, eventlet, email-validator, contourpy, click-plugins, click-didyoumean, cffi, blis, bleach, anyio, amqp, aiosignal, vaderSentiment, torch, starlette, sse-starlette, simple-websocket, scikit-learn, rich, pydantic, pandas, opentelemetry-api, matplotlib, lightgbm, langcodes, kombu, jsonschema-specifications, jsonschema-path, huggingface-hub, httpx, graphene, google-auth, gitpython, flask, docker, cryptography, click-repl, alembic, aiohttp, torchvision, tokenizers, shap, rich-rst, python-engineio, pydantic-settings, prometheus_flask_exporter, opentelemetry-semantic-conventions, openapi-pydantic, openai, jsonschema, Flask-WTF, Flask-SQLAlchemy, Flask-Login, Flask-Cors, fastapi, ddtrace, databricks-sdk, confection, celery, authlib, weasel, transformers, thinc, python-socketio, opentelemetry-sdk, openapi-schema-validator, mcp, Flasgger, cyclopts, spacy, sentence-transformers, openapi-spec-validator, mlflow-tracing, mlflow-skinny, Flask-SocketIO, openapi-core, fastmcp, mlflow
+#14 452.5 Successfully installed Flasgger-0.9.7.1 Flask-Cors-6.0.1 Flask-Login-0.6.3 Flask-SQLAlchemy-3.0.5 Flask-SocketIO-5.5.1 Flask-WTF-1.2.2 Jinja2-3.1.6 Mako-1.3.10 MarkupSafe-3.0.2 PyYAML-6.0.3 Werkzeug-2.2.3 aiohappyeyeballs-2.6.1 aiohttp-3.13.0 aiosignal-1.4.0 alembic-1.17.0 amqp-5.3.1 annotated-types-0.7.0 anyio-4.11.0 attrs-25.4.0 authlib-1.6.5 bidict-0.23.1 billiard-4.2.2 bleach-6.1.0 blinker-1.9.0 blis-0.7.11 bytecode-0.17.0 cachetools-6.2.1 catalogue-2.0.10 celery-5.5.2 certifi-2025.10.5 cffi-2.0.0 charset_normalizer-3.4.3 click-8.1.8 click-didyoumean-0.3.1 click-plugins-1.1.1.2 click-repl-0.3.0 cloudpathlib-0.16.0 cloudpickle-3.1.1 colorama-0.4.6 confection-0.1.5 contourpy-1.3.3 cryptography-45.0.7 cycler-0.12.1 cyclopts-3.24.0 cymem-2.0.11 databricks-sdk-0.67.0 ddtrace-3.8.0 dnspython-2.2.1 docker-7.1.0 docstring-parser-0.17.0 docutils-0.22.2 email-validator-2.3.0 envier-0.6.1 eventlet-0.40.3 exceptiongroup-1.3.0 fastapi-0.119.0 fastmcp-2.12.4 filelock-3.20.0 flask-2.2.5 fluent-logger-0.11.1 fonttools-4.60.1 frozenlist-1.8.0 fsspec-2025.9.0 gitdb-4.0.12 gitpython-3.1.45 google-auth-2.41.1 graphene-3.4.3 graphql-core-3.2.6 graphql-relay-3.2.0 greenlet-3.2.4 gunicorn-20.1.0 h11-0.16.0 hf-xet-1.1.10 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 huggingface-hub-0.35.3 idna-3.10 importlib_metadata-8.7.0 isodate-0.7.2 itsdangerous-2.2.0 joblib-1.4.2 jsonschema-4.25.1 jsonschema-path-0.3.4 jsonschema-specifications-2025.9.1 kiwisolver-1.4.9 kombu-5.5.4 langcodes-3.5.0 language-data-1.3.0 lazy-object-proxy-1.12.0 lightgbm-4.6.0 llvmlite-0.45.1 marisa-trie-1.3.1 markdown-it-py-4.0.0 matplotlib-3.10.6 mcp-1.17.0 mdurl-0.1.2 mistune-3.1.4 mlflow-3.4.0 mlflow-skinny-3.4.0 mlflow-tracing-3.4.0 more-itertools-10.8.0 mpmath-1.3.0 msgpack-1.1.1 multidict-6.7.0 murmurhash-1.0.13 networkx-3.5 nltk-3.9.1 numba-0.62.1 numpy-1.26.4 openai-0.27.0 openapi-core-0.19.5 openapi-pydantic-0.5.1 openapi-schema-validator-0.6.3 openapi-spec-validator-0.7.2 opentelemetry-api-1.37.0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 packaging-25.0 pandas-2.2.3 parse-1.20.2 pathable-0.4.4 pillow-11.3.0 preshed-3.0.10 prometheus-client-0.23.1 prometheus_flask_exporter-0.20.1 prompt-toolkit-3.0.52 propcache-0.4.1 protobuf-6.32.1 pyarrow-21.0.0 pyasn1-0.6.1 pyasn1-modules-0.4.2 pycparser-2.23 pydantic-2.12.0 pydantic-core-2.41.1 pydantic-settings-2.11.0 pygments-2.19.2 pyparsing-3.2.5 pyperclip-1.11.0 pyphen-0.17.2 python-dateutil-2.9.0.post0 python-dotenv-1.1.1 python-engineio-4.12.3 python-multipart-0.0.20 python-socketio-5.14.1 pytz-2025.2 rapidfuzz-2.13.7 redis-6.1.0 referencing-0.36.2 regex-2024.11.6 requests-2.32.5 rfc3339-validator-0.1.4 rich-14.2.0 rich-rst-1.3.1 rpds-py-0.27.1 rsa-4.9.1 safetensors-0.6.2 scikit-learn-1.6.1 scipy-1.15.3 sentence-transformers-2.2.2 sentencepiece-0.2.1 shap-0.48.0 simple-websocket-1.1.0 six-1.17.0 slicer-0.0.8 smart-open-6.4.0 smmap-5.0.2 sniffio-1.3.1 spacy-3.7.2 spacy-legacy-3.0.12 spacy-loggers-1.0.5 sqlalchemy-2.0.43 sqlparse-0.5.3 srsly-2.5.1 sse-starlette-3.0.2 starlette-0.48.0 sympy-1.14.0 textstat-0.7.1 thinc-8.2.5 threadpoolctl-3.6.0 tokenizers-0.22.1 torch-2.0.1+cpu torchvision-0.15.2+cpu tqdm-4.67.1 transformers-4.57.0 typer-0.9.4 typing-inspection-0.4.2 typing_extensions-4.15.0 tzdata-2025.2 urllib3-2.5.0 uvicorn-0.37.0 vaderSentiment-3.3.2 vine-5.1.0 wasabi-1.1.3 wcwidth-0.2.14 weasel-0.3.4 webencodings-0.5.1 wrapt-1.17.3 wsproto-1.2.0 wtforms-3.2.1 xmltodict-1.0.2 yarl-1.22.0 zipp-3.23.0
+#14 452.5 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#14 454.5 
+#14 454.5 [notice] A new release of pip is available: 24.0 -> 25.2
+#14 454.5 [notice] To update, run: pip install --upgrade pip
+#14 461.4 Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cpu
+#14 461.4 Looking in links: /wheels
+#14 461.4 Requirement already satisfied: flask==2.2.5 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 1)) (2.2.5)
+#14 461.4 Requirement already satisfied: blinker==1.9.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 2)) (1.9.0)
+#14 461.4 Requirement already satisfied: click==8.1.8 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 3)) (8.1.8)
+#14 461.4 Requirement already satisfied: colorama==0.4.6 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 4)) (0.4.6)
+#14 461.4 Requirement already satisfied: itsdangerous==2.2.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 5)) (2.2.0)
+#14 461.4 Requirement already satisfied: Jinja2==3.1.6 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 6)) (3.1.6)
+#14 461.4 Requirement already satisfied: joblib==1.4.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 7)) (1.4.2)
+#14 461.4 Requirement already satisfied: MarkupSafe==3.0.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 8)) (3.0.2)
+#14 461.4 Requirement already satisfied: nltk==3.9.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 9)) (3.9.1)
+#14 461.4 Requirement already satisfied: numpy==1.26.4 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 10)) (1.26.4)
+#14 461.4 Requirement already satisfied: pandas==2.2.3 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 11)) (2.2.3)
+#14 461.4 Requirement already satisfied: python-dateutil==2.9.0.post0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 12)) (2.9.0.post0)
+#14 461.4 Requirement already satisfied: pytz==2025.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 13)) (2025.2)
+#14 461.4 Requirement already satisfied: regex==2024.11.6 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 14)) (2024.11.6)
+#14 461.4 Requirement already satisfied: scikit-learn==1.6.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 15)) (1.6.1)
+#14 461.5 Requirement already satisfied: scipy==1.15.3 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 16)) (1.15.3)
+#14 461.5 Requirement already satisfied: six==1.17.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 17)) (1.17.0)
+#14 461.5 Requirement already satisfied: threadpoolctl==3.6.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 18)) (3.6.0)
+#14 461.5 Requirement already satisfied: tqdm==4.67.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 19)) (4.67.1)
+#14 461.5 Requirement already satisfied: tzdata==2025.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 20)) (2025.2)
+#14 461.5 Requirement already satisfied: Werkzeug==2.2.3 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 21)) (2.2.3)
+#14 461.5 Requirement already satisfied: ddtrace==3.8.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 22)) (3.8.0)
+#14 461.5 Requirement already satisfied: redis==6.1.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 23)) (6.1.0)
+#14 461.5 Requirement already satisfied: Flask-SQLAlchemy==3.0.5 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 24)) (3.0.5)
+#14 461.5 Requirement already satisfied: Flask-Cors==6.0.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 25)) (6.0.1)
+#14 461.5 Requirement already satisfied: prometheus_flask_exporter==0.20.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 26)) (0.20.1)
+#14 461.5 Requirement already satisfied: Flask-WTF==1.2.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 27)) (1.2.2)
+#14 461.5 Requirement already satisfied: Flask-Login==0.6.3 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 28)) (0.6.3)
+#14 461.5 Requirement already satisfied: fluent-logger==0.11.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 29)) (0.11.1)
+#14 461.5 Requirement already satisfied: Flasgger==0.9.7.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 30)) (0.9.7.1)
+#14 461.5 Requirement already satisfied: rapidfuzz==2.13.7 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 31)) (2.13.7)
+#14 461.5 Requirement already satisfied: eventlet==0.40.3 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 32)) (0.40.3)
+#14 461.5 Requirement already satisfied: dnspython==2.2.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 33)) (2.2.1)
+#14 461.5 Requirement already satisfied: Flask-SocketIO==5.5.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 34)) (5.5.1)
+#14 461.5 Requirement already satisfied: bleach==6.1.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 35)) (6.1.0)
+#14 461.5 Requirement already satisfied: requests==2.32.5 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 36)) (2.32.5)
+#14 461.5 Requirement already satisfied: gunicorn==20.1.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 37)) (20.1.0)
+#14 461.5 Requirement already satisfied: openai==0.27.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 38)) (0.27.0)
+#14 461.5 Requirement already satisfied: matplotlib==3.10.6 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 39)) (3.10.6)
+#14 461.5 Requirement already satisfied: vaderSentiment==3.3.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 40)) (3.3.2)
+#14 461.5 Requirement already satisfied: textstat==0.7.1 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 41)) (0.7.1)
+#14 461.6 Requirement already satisfied: celery==5.5.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 42)) (5.5.2)
+#14 461.6 Requirement already satisfied: lightgbm==4.6.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 45)) (4.6.0)
+#14 461.6 Requirement already satisfied: shap==0.48.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 46)) (0.48.0)
+#14 461.6 Requirement already satisfied: mlflow==3.4.0 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 47)) (3.4.0)
+#14 461.6 Requirement already satisfied: sentence-transformers==2.2.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 48)) (2.2.2)
+#14 461.6 Requirement already satisfied: torch==2.0.1+cpu in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 50)) (2.0.1+cpu)
+#14 461.6 Requirement already satisfied: spacy==3.7.2 in /usr/local/lib/python3.11/site-packages (from -r /app/requirements-runtime.txt (line 51)) (3.7.2)
+#14 463.0 Collecting pytest==7.4.0 (from -r /app/requirements-dev.txt (line 12))
+#14 463.5   Downloading pytest-7.4.0-py3-none-any.whl.metadata (8.0 kB)
+#14 464.5 Collecting black==24.10.0 (from -r /app/requirements-dev.txt (line 13))
+#14 464.7   Downloading black-24.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+#14 464.9      ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 79.2/79.2 kB 384.8 kB/s eta 0:00:00
+#14 465.2 Requirement already satisfied: bytecode>=0.14.0 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (0.17.0)
+#14 465.2 Requirement already satisfied: envier~=0.6.1 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (0.6.1)
+#14 465.2 Requirement already satisfied: opentelemetry-api>=1 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (1.37.0)
+#14 465.2 Requirement already satisfied: protobuf>=3 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (6.32.1)
+#14 465.2 Requirement already satisfied: typing_extensions in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (4.15.0)
+#14 465.2 Requirement already satisfied: xmltodict>=0.12 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (1.0.2)
+#14 465.2 Requirement already satisfied: wrapt>=1 in /usr/local/lib/python3.11/site-packages (from ddtrace==3.8.0->-r /app/requirements-runtime.txt (line 22)) (1.17.3)
+#14 465.2 Requirement already satisfied: sqlalchemy>=1.4.18 in /usr/local/lib/python3.11/site-packages (from Flask-SQLAlchemy==3.0.5->-r /app/requirements-runtime.txt (line 24)) (2.0.43)
+#14 465.3 Requirement already satisfied: prometheus-client in /usr/local/lib/python3.11/site-packages (from prometheus_flask_exporter==0.20.1->-r /app/requirements-runtime.txt (line 26)) (0.23.1)
+#14 465.3 Requirement already satisfied: wtforms in /usr/local/lib/python3.11/site-packages (from Flask-WTF==1.2.2->-r /app/requirements-runtime.txt (line 27)) (3.2.1)
+#14 465.3 Requirement already satisfied: msgpack>=1.0 in /usr/local/lib/python3.11/site-packages (from fluent-logger==0.11.1->-r /app/requirements-runtime.txt (line 29)) (1.1.1)
+#14 465.3 Requirement already satisfied: PyYAML>=3.0 in /usr/local/lib/python3.11/site-packages (from Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (6.0.3)
+#14 465.3 Requirement already satisfied: jsonschema>=3.0.1 in /usr/local/lib/python3.11/site-packages (from Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (4.25.1)
+#14 465.3 Requirement already satisfied: mistune in /usr/local/lib/python3.11/site-packages (from Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (3.1.4)
+#14 465.3 Requirement already satisfied: packaging in /usr/local/lib/python3.11/site-packages (from Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (25.0)
+#14 465.3 Requirement already satisfied: greenlet>=1.0 in /usr/local/lib/python3.11/site-packages (from eventlet==0.40.3->-r /app/requirements-runtime.txt (line 32)) (3.2.4)
+#14 465.4 Requirement already satisfied: python-socketio>=5.12.0 in /usr/local/lib/python3.11/site-packages (from Flask-SocketIO==5.5.1->-r /app/requirements-runtime.txt (line 34)) (5.14.1)
+#14 465.4 Requirement already satisfied: webencodings in /usr/local/lib/python3.11/site-packages (from bleach==6.1.0->-r /app/requirements-runtime.txt (line 35)) (0.5.1)
+#14 465.4 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/site-packages (from requests==2.32.5->-r /app/requirements-runtime.txt (line 36)) (3.4.3)
+#14 465.4 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/site-packages (from requests==2.32.5->-r /app/requirements-runtime.txt (line 36)) (3.10)
+#14 465.4 Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/site-packages (from requests==2.32.5->-r /app/requirements-runtime.txt (line 36)) (2.5.0)
+#14 465.4 Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/site-packages (from requests==2.32.5->-r /app/requirements-runtime.txt (line 36)) (2025.10.5)
+#14 465.4 Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.11/site-packages (from gunicorn==20.1.0->-r /app/requirements-runtime.txt (line 37)) (65.5.1)
+#14 465.4 Requirement already satisfied: aiohttp in /usr/local/lib/python3.11/site-packages (from openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (3.13.0)
+#14 465.5 Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (1.3.3)
+#14 465.5 Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (0.12.1)
+#14 465.5 Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (4.60.1)
+#14 465.5 Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (1.4.9)
+#14 465.5 Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (11.3.0)
+#14 465.5 Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.6->-r /app/requirements-runtime.txt (line 39)) (3.2.5)
+#14 465.5 Requirement already satisfied: pyphen in /usr/local/lib/python3.11/site-packages (from textstat==0.7.1->-r /app/requirements-runtime.txt (line 41)) (0.17.2)
+#14 465.6 Requirement already satisfied: billiard<5.0,>=4.2.1 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (4.2.2)
+#14 465.6 Requirement already satisfied: kombu<5.6,>=5.5.2 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (5.5.4)
+#14 465.6 Requirement already satisfied: vine<6.0,>=5.1.0 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (5.1.0)
+#14 465.6 Requirement already satisfied: click-didyoumean>=0.3.0 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (0.3.1)
+#14 465.6 Requirement already satisfied: click-repl>=0.2.0 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (0.3.0)
+#14 465.6 Requirement already satisfied: click-plugins>=1.1.1 in /usr/local/lib/python3.11/site-packages (from celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (1.1.1.2)
+#14 465.7 Requirement already satisfied: slicer==0.0.8 in /usr/local/lib/python3.11/site-packages (from shap==0.48.0->-r /app/requirements-runtime.txt (line 46)) (0.0.8)
+#14 465.7 Requirement already satisfied: numba>=0.54 in /usr/local/lib/python3.11/site-packages (from shap==0.48.0->-r /app/requirements-runtime.txt (line 46)) (0.62.1)
+#14 465.7 Requirement already satisfied: cloudpickle in /usr/local/lib/python3.11/site-packages (from shap==0.48.0->-r /app/requirements-runtime.txt (line 46)) (3.1.1)
+#14 465.7 Requirement already satisfied: mlflow-skinny==3.4.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.4.0)
+#14 465.7 Requirement already satisfied: mlflow-tracing==3.4.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.4.0)
+#14 465.7 Requirement already satisfied: alembic!=1.10.0,<2 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.17.0)
+#14 465.7 Requirement already satisfied: cryptography<46,>=43.0.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (45.0.7)
+#14 465.7 Requirement already satisfied: docker<8,>=4.0.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (7.1.0)
+#14 465.7 Requirement already satisfied: fastmcp<3,>=2.0.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.12.4)
+#14 465.7 Requirement already satisfied: graphene<4 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.4.3)
+#14 465.8 Requirement already satisfied: pyarrow<22,>=4.0.0 in /usr/local/lib/python3.11/site-packages (from mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (21.0.0)
+#14 465.8 Requirement already satisfied: transformers<5.0.0,>=4.6.0 in /usr/local/lib/python3.11/site-packages (from sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (4.57.0)
+#14 465.8 Requirement already satisfied: torchvision in /usr/local/lib/python3.11/site-packages (from sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (0.15.2+cpu)
+#14 465.8 Requirement already satisfied: sentencepiece in /usr/local/lib/python3.11/site-packages (from sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (0.2.1)
+#14 465.8 Requirement already satisfied: huggingface-hub>=0.4.0 in /usr/local/lib/python3.11/site-packages (from sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (0.35.3)
+#14 465.8 Requirement already satisfied: filelock in /usr/local/lib/python3.11/site-packages (from torch==2.0.1+cpu->-r /app/requirements-runtime.txt (line 50)) (3.20.0)
+#14 465.8 Requirement already satisfied: sympy in /usr/local/lib/python3.11/site-packages (from torch==2.0.1+cpu->-r /app/requirements-runtime.txt (line 50)) (1.14.0)
+#14 465.8 Requirement already satisfied: networkx in /usr/local/lib/python3.11/site-packages (from torch==2.0.1+cpu->-r /app/requirements-runtime.txt (line 50)) (3.5)
+#14 465.9 Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (3.0.12)
+#14 465.9 Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (1.0.5)
+#14 465.9 Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (1.0.13)
+#14 465.9 Requirement already satisfied: cymem<2.1.0,>=2.0.2 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (2.0.11)
+#14 465.9 Requirement already satisfied: preshed<3.1.0,>=3.0.2 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (3.0.10)
+#14 465.9 Requirement already satisfied: thinc<8.3.0,>=8.1.8 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (8.2.5)
+#14 465.9 Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (1.1.3)
+#14 465.9 Requirement already satisfied: srsly<3.0.0,>=2.4.3 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (2.5.1)
+#14 465.9 Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (2.0.10)
+#14 465.9 Requirement already satisfied: weasel<0.4.0,>=0.1.0 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.3.4)
+#14 465.9 Requirement already satisfied: typer<0.10.0,>=0.3.0 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.9.4)
+#14 465.9 Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (6.4.0)
+#14 465.9 Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (2.12.0)
+#14 465.9 Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in /usr/local/lib/python3.11/site-packages (from spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (3.5.0)
+#14 466.8 Collecting iniconfig (from pytest==7.4.0->-r /app/requirements-dev.txt (line 12))
+#14 466.9   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+#14 467.8 Collecting pluggy<2.0,>=0.12 (from pytest==7.4.0->-r /app/requirements-dev.txt (line 12))
+#14 467.9   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+#14 468.8 Collecting mypy-extensions>=0.4.3 (from black==24.10.0->-r /app/requirements-dev.txt (line 13))
+#14 468.9   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+#14 469.8 Collecting pathspec>=0.9.0 (from black==24.10.0->-r /app/requirements-dev.txt (line 13))
+#14 469.9   Downloading pathspec-0.12.1-py3-none-any.whl.metadata (21 kB)
+#14 470.9 Collecting platformdirs>=2 (from black==24.10.0->-r /app/requirements-dev.txt (line 13))
+#14 471.2   Downloading platformdirs-4.5.0-py3-none-any.whl.metadata (12 kB)
+#14 471.2 Requirement already satisfied: cachetools<7,>=5.0.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (6.2.1)
+#14 471.2 Requirement already satisfied: databricks-sdk<1,>=0.20.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.67.0)
+#14 471.2 Requirement already satisfied: fastapi<1 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.119.0)
+#14 471.2 Requirement already satisfied: gitpython<4,>=3.1.9 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.1.45)
+#14 471.2 Requirement already satisfied: importlib_metadata!=4.7.0,<9,>=3.7.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (8.7.0)
+#14 471.2 Requirement already satisfied: opentelemetry-proto<3,>=1.9.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.37.0)
+#14 471.2 Requirement already satisfied: opentelemetry-sdk<3,>=1.9.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.37.0)
+#14 471.2 Requirement already satisfied: python-dotenv<2,>=0.19.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.1.1)
+#14 471.2 Requirement already satisfied: sqlparse<1,>=0.4.0 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.5.3)
+#14 471.2 Requirement already satisfied: uvicorn<1 in /usr/local/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.37.0)
+#14 471.3 Requirement already satisfied: Mako in /usr/local/lib/python3.11/site-packages (from alembic!=1.10.0,<2->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.3.10)
+#14 471.4 Requirement already satisfied: prompt-toolkit>=3.0.36 in /usr/local/lib/python3.11/site-packages (from click-repl>=0.2.0->celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (3.0.52)
+#14 471.4 Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.11/site-packages (from cryptography<46,>=43.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.0.0)
+#14 471.5 Requirement already satisfied: authlib>=1.5.2 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.6.5)
+#14 471.5 Requirement already satisfied: cyclopts>=3.0.0 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.24.0)
+#14 471.5 Requirement already satisfied: exceptiongroup>=1.2.2 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.3.0)
+#14 471.5 Requirement already satisfied: httpx>=0.28.1 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.28.1)
+#14 471.5 Requirement already satisfied: mcp<2.0.0,>=1.12.4 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.17.0)
+#14 471.5 Requirement already satisfied: openapi-core>=0.19.5 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.19.5)
+#14 471.6 Requirement already satisfied: openapi-pydantic>=0.5.1 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.5.1)
+#14 471.6 Requirement already satisfied: pyperclip>=1.9.0 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.11.0)
+#14 471.6 Requirement already satisfied: rich>=13.9.4 in /usr/local/lib/python3.11/site-packages (from fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (14.2.0)
+#14 471.6 Requirement already satisfied: graphql-core<3.3,>=3.1 in /usr/local/lib/python3.11/site-packages (from graphene<4->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.2.6)
+#14 471.6 Requirement already satisfied: graphql-relay<3.3,>=3.1 in /usr/local/lib/python3.11/site-packages (from graphene<4->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.2.0)
+#14 471.8 Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.11/site-packages (from huggingface-hub>=0.4.0->sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (2025.9.0)
+#14 471.8 Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.11/site-packages (from huggingface-hub>=0.4.0->sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (1.1.10)
+#14 471.8 Requirement already satisfied: attrs>=22.2.0 in /usr/local/lib/python3.11/site-packages (from jsonschema>=3.0.1->Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (25.4.0)
+#14 471.8 Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /usr/local/lib/python3.11/site-packages (from jsonschema>=3.0.1->Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (2025.9.1)
+#14 471.8 Requirement already satisfied: referencing>=0.28.4 in /usr/local/lib/python3.11/site-packages (from jsonschema>=3.0.1->Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (0.36.2)
+#14 471.8 Requirement already satisfied: rpds-py>=0.7.1 in /usr/local/lib/python3.11/site-packages (from jsonschema>=3.0.1->Flasgger==0.9.7.1->-r /app/requirements-runtime.txt (line 30)) (0.27.1)
+#14 471.9 Requirement already satisfied: amqp<6.0.0,>=5.1.1 in /usr/local/lib/python3.11/site-packages (from kombu<5.6,>=5.5.2->celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (5.3.1)
+#14 471.9 Requirement already satisfied: language-data>=1.2 in /usr/local/lib/python3.11/site-packages (from langcodes<4.0.0,>=3.2.0->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (1.3.0)
+#14 472.0 Requirement already satisfied: llvmlite<0.46,>=0.45.0dev0 in /usr/local/lib/python3.11/site-packages (from numba>=0.54->shap==0.48.0->-r /app/requirements-runtime.txt (line 46)) (0.45.1)
+#14 472.1 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.7.0)
+#14 472.1 Requirement already satisfied: pydantic-core==2.41.1 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (2.41.1)
+#14 472.1 Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.4.2)
+#14 472.2 Requirement already satisfied: bidict>=0.21.0 in /usr/local/lib/python3.11/site-packages (from python-socketio>=5.12.0->Flask-SocketIO==5.5.1->-r /app/requirements-runtime.txt (line 34)) (0.23.1)
+#14 472.2 Requirement already satisfied: python-engineio>=4.11.0 in /usr/local/lib/python3.11/site-packages (from python-socketio>=5.12.0->Flask-SocketIO==5.5.1->-r /app/requirements-runtime.txt (line 34)) (4.12.3)
+#14 472.4 Requirement already satisfied: blis<0.8.0,>=0.7.8 in /usr/local/lib/python3.11/site-packages (from thinc<8.3.0,>=8.1.8->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.7.11)
+#14 472.4 Requirement already satisfied: confection<1.0.0,>=0.0.1 in /usr/local/lib/python3.11/site-packages (from thinc<8.3.0,>=8.1.8->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.1.5)
+#14 472.9 Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.11/site-packages (from transformers<5.0.0,>=4.6.0->sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (0.22.1)
+#14 472.9 Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.11/site-packages (from transformers<5.0.0,>=4.6.0->sentence-transformers==2.2.2->-r /app/requirements-runtime.txt (line 48)) (0.6.2)
+#14 473.0 Requirement already satisfied: cloudpathlib<0.17.0,>=0.7.0 in /usr/local/lib/python3.11/site-packages (from weasel<0.4.0,>=0.1.0->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (0.16.0)
+#14 473.1 Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (2.6.1)
+#14 473.1 Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (1.4.0)
+#14 473.1 Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (1.8.0)
+#14 473.1 Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (6.7.0)
+#14 473.1 Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (0.4.1)
+#14 473.1 Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.11/site-packages (from aiohttp->openai==0.27.0->-r /app/requirements-runtime.txt (line 38)) (1.22.0)
+#14 473.3 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.11/site-packages (from sympy->torch==2.0.1+cpu->-r /app/requirements-runtime.txt (line 50)) (1.3.0)
+#14 473.6 Requirement already satisfied: pycparser in /usr/local/lib/python3.11/site-packages (from cffi>=1.14->cryptography<46,>=43.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.23)
+#14 473.7 Requirement already satisfied: docstring-parser>=0.15 in /usr/local/lib/python3.11/site-packages (from cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.17.0)
+#14 473.7 Requirement already satisfied: rich-rst<2.0.0,>=1.3.1 in /usr/local/lib/python3.11/site-packages (from cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.3.1)
+#14 473.7 Requirement already satisfied: google-auth~=2.0 in /usr/local/lib/python3.11/site-packages (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.41.1)
+#14 473.8 Requirement already satisfied: starlette<0.49.0,>=0.40.0 in /usr/local/lib/python3.11/site-packages (from fastapi<1->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.48.0)
+#14 474.0 Requirement already satisfied: gitdb<5,>=4.0.1 in /usr/local/lib/python3.11/site-packages (from gitpython<4,>=3.1.9->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (4.0.12)
+#14 474.1 Requirement already satisfied: anyio in /usr/local/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (4.11.0)
+#14 474.2 Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.0.9)
+#14 474.2 Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.11/site-packages (from httpcore==1.*->httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.16.0)
+#14 474.2 Requirement already satisfied: zipp>=3.20 in /usr/local/lib/python3.11/site-packages (from importlib_metadata!=4.7.0,<9,>=3.7.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.23.0)
+#14 474.3 Requirement already satisfied: marisa-trie>=1.1.0 in /usr/local/lib/python3.11/site-packages (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy==3.7.2->-r /app/requirements-runtime.txt (line 51)) (1.3.1)
+#14 474.4 Requirement already satisfied: httpx-sse>=0.4 in /usr/local/lib/python3.11/site-packages (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.4.3)
+#14 474.4 Requirement already satisfied: pydantic-settings>=2.5.2 in /usr/local/lib/python3.11/site-packages (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.11.0)
+#14 474.4 Requirement already satisfied: python-multipart>=0.0.9 in /usr/local/lib/python3.11/site-packages (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.0.20)
+#14 474.4 Requirement already satisfied: sse-starlette>=1.6.1 in /usr/local/lib/python3.11/site-packages (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (3.0.2)
+#14 474.5 Requirement already satisfied: isodate in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.7.2)
+#14 474.6 Requirement already satisfied: jsonschema-path<0.4.0,>=0.3.1 in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.3.4)
+#14 474.6 Requirement already satisfied: more-itertools in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (10.8.0)
+#14 474.6 Requirement already satisfied: openapi-schema-validator<0.7.0,>=0.6.0 in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.6.3)
+#14 474.6 Requirement already satisfied: openapi-spec-validator<0.8.0,>=0.7.1 in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.7.2)
+#14 474.6 Requirement already satisfied: parse in /usr/local/lib/python3.11/site-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.20.2)
+#14 474.7 Requirement already satisfied: opentelemetry-semantic-conventions==0.58b0 in /usr/local/lib/python3.11/site-packages (from opentelemetry-sdk<3,>=1.9.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.58b0)
+#14 474.7 Requirement already satisfied: wcwidth in /usr/local/lib/python3.11/site-packages (from prompt-toolkit>=3.0.36->click-repl>=0.2.0->celery==5.5.2->-r /app/requirements-runtime.txt (line 42)) (0.2.14)
+#14 474.8 Requirement already satisfied: email-validator>=2.0.0 in /usr/local/lib/python3.11/site-packages (from pydantic[email]>=2.11.7->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.3.0)
+#14 474.9 Requirement already satisfied: simple-websocket>=0.10.0 in /usr/local/lib/python3.11/site-packages (from python-engineio>=4.11.0->python-socketio>=5.12.0->Flask-SocketIO==5.5.1->-r /app/requirements-runtime.txt (line 34)) (1.1.0)
+#14 475.0 Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.11/site-packages (from rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (4.0.0)
+#14 475.0 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.11/site-packages (from rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (2.19.2)
+#14 475.3 Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.11/site-packages (from anyio->httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.3.1)
+#14 475.4 Requirement already satisfied: smmap<6,>=3.0.1 in /usr/local/lib/python3.11/site-packages (from gitdb<5,>=4.0.1->gitpython<4,>=3.1.9->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (5.0.2)
+#14 475.5 Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.11/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.4.2)
+#14 475.5 Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.11/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (4.9.1)
+#14 475.6 Requirement already satisfied: pathable<0.5.0,>=0.4.1 in /usr/local/lib/python3.11/site-packages (from jsonschema-path<0.4.0,>=0.3.1->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.4.4)
+#14 475.7 Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.11/site-packages (from markdown-it-py>=2.2.0->rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.1.2)
+#14 475.8 Requirement already satisfied: rfc3339-validator in /usr/local/lib/python3.11/site-packages (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.1.4)
+#14 475.8 Requirement already satisfied: lazy-object-proxy<2.0.0,>=1.7.1 in /usr/local/lib/python3.11/site-packages (from openapi-spec-validator<0.8.0,>=0.7.1->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (1.12.0)
+#14 475.9 Requirement already satisfied: docutils in /usr/local/lib/python3.11/site-packages (from rich-rst<2.0.0,>=1.3.1->cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.22.2)
+#14 476.0 Requirement already satisfied: wsproto in /usr/local/lib/python3.11/site-packages (from simple-websocket>=0.10.0->python-engineio>=4.11.0->python-socketio>=5.12.0->Flask-SocketIO==5.5.1->-r /app/requirements-runtime.txt (line 34)) (1.2.0)
+#14 476.4 Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in /usr/local/lib/python3.11/site-packages (from pyasn1-modules>=0.2.1->google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow==3.4.0->-r /app/requirements-runtime.txt (line 47)) (0.6.1)
+#14 476.8 Downloading pytest-7.4.0-py3-none-any.whl (323 kB)
+#14 477.1    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 323.6/323.6 kB 983.4 kB/s eta 0:00:00
+#14 477.2 Downloading black-24.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+#14 477.7    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 1.7/1.7 MB 4.1 MB/s eta 0:00:00
+#14 477.8 Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+#14 478.0 Downloading pathspec-0.12.1-py3-none-any.whl (31 kB)
+#14 478.1 Downloading platformdirs-4.5.0-py3-none-any.whl (18 kB)
+#14 478.3 Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+#14 478.5 Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+#14 480.5 Installing collected packages: pluggy, platformdirs, pathspec, mypy-extensions, iniconfig, pytest, black
+#14 481.4 Successfully installed black-24.10.0 iniconfig-2.1.0 mypy-extensions-1.1.0 pathspec-0.12.1 platformdirs-4.5.0 pluggy-1.6.0 pytest-7.4.0
+#14 481.4 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#14 482.7 
+#14 482.7 [notice] A new release of pip is available: 24.0 -> 25.2
+#14 482.7 [notice] To update, run: pip install --upgrade pip
+#14 DONE 483.1s
+
+#15 [web  9/11] RUN pip install --no-cache-dir --find-links=/wheels --extra-index-url https://download.pytorch.org/whl/cpu --no-deps --force-reinstall eventlet==0.40.3
+#15 1.152 Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cpu
+#15 1.152 Looking in links: /wheels
+#15 2.381 Collecting eventlet==0.40.3
+#15 2.862   Downloading eventlet-0.40.3-py3-none-any.whl.metadata (5.4 kB)
+#15 3.021 Downloading eventlet-0.40.3-py3-none-any.whl (364 kB)
+#15 3.533    ÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöüÔöü 364.3/364.3 kB 733.1 kB/s eta 0:00:00
+#15 3.538 Installing collected packages: eventlet
+#15 3.539   Attempting uninstall: eventlet
+#15 3.593     Found existing installation: eventlet 0.40.3
+#15 3.605     Uninstalling eventlet-0.40.3:
+#15 3.642       Successfully uninstalled eventlet-0.40.3
+#15 3.824 Successfully installed eventlet-0.40.3
+#15 3.824 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#15 5.093 
+#15 5.093 [notice] A new release of pip is available: 24.0 -> 25.2
+#15 5.093 [notice] To update, run: pip install --upgrade pip
+#15 DONE 5.3s
+
+#16 [worker_io 10/11] COPY . .
+#16 DONE 101.1s
+
+#17 [worker_cpu 11/11] RUN if ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then   echo "Installing en_core_web_sm from first matching wheel in /wheels";   for f in /wheels/en_core_web_sm-*; do     pip install --no-index "$f" && break;   done; else   echo "No en_core_web_sm wheel found in /wheels; skipping model install (will fetch at runtime if needed)"; fi && if pip show nltk > /dev/null 2>&1; then   echo "Installing NLTK vader_lexicon into /root/nltk_data";   python -c "import nltk, os; d=os.environ.get('NLTK_DATA','/root/nltk_data'); os.makedirs(d, exist_ok=True); import nltk.downloader as nd; nd.download('vader_lexicon', download_dir=d)"; else   echo "NLTK not installed or not in wheelhouse; skipping NLTK data download"; fi
+#17 10.20 Installing en_core_web_sm from first matching wheel in /wheels
+#17 11.77 Processing /wheels/en_core_web_sm-3.7.1-py3-none-any.whl
+#17 11.80 Requirement already satisfied: spacy<3.8.0,>=3.7.2 in /usr/local/lib/python3.11/site-packages (from en-core-web-sm==3.7.1) (3.7.2)
+#17 11.85 Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.0.12)
+#17 11.85 Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.0.5)
+#17 11.85 Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.0.13)
+#17 11.86 Requirement already satisfied: cymem<2.1.0,>=2.0.2 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.0.11)
+#17 11.86 Requirement already satisfied: preshed<3.1.0,>=3.0.2 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.0.10)
+#17 11.86 Requirement already satisfied: thinc<8.3.0,>=8.1.8 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (8.2.5)
+#17 11.86 Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.1.3)
+#17 11.87 Requirement already satisfied: srsly<3.0.0,>=2.4.3 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.5.1)
+#17 11.87 Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.0.10)
+#17 11.87 Requirement already satisfied: weasel<0.4.0,>=0.1.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.3.4)
+#17 11.88 Requirement already satisfied: typer<0.10.0,>=0.3.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.9.4)
+#17 11.88 Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (6.4.0)
+#17 11.89 Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (4.67.1)
+#17 11.89 Requirement already satisfied: requests<3.0.0,>=2.13.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.32.5)
+#17 11.89 Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.12.0)
+#17 11.89 Requirement already satisfied: jinja2 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.1.6)
+#17 11.90 Requirement already satisfied: setuptools in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (65.5.1)
+#17 11.90 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (25.0)
+#17 11.90 Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.5.0)
+#17 11.91 Requirement already satisfied: numpy>=1.19.0 in /usr/local/lib/python3.11/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.26.4)
+#17 11.93 Requirement already satisfied: language-data>=1.2 in /usr/local/lib/python3.11/site-packages (from langcodes<4.0.0,>=3.2.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.3.0)
+#17 11.95 Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.7.0)
+#17 11.95 Requirement already satisfied: pydantic-core==2.41.1 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.41.1)
+#17 11.96 Requirement already satisfied: typing-extensions>=4.14.1 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (4.15.0)
+#17 11.96 Requirement already satisfied: typing-inspection>=0.4.2 in /usr/local/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.4.2)
+#17 11.98 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.4.3)
+#17 11.98 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.10)
+#17 11.98 Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.5.0)
+#17 11.98 Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2025.10.5)
+#17 12.05 Requirement already satisfied: blis<0.8.0,>=0.7.8 in /usr/local/lib/python3.11/site-packages (from thinc<8.3.0,>=8.1.8->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.7.11)
+#17 12.06 Requirement already satisfied: confection<1.0.0,>=0.0.1 in /usr/local/lib/python3.11/site-packages (from thinc<8.3.0,>=8.1.8->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.1.5)
+#17 12.10 Requirement already satisfied: click<9.0.0,>=7.1.1 in /usr/local/lib/python3.11/site-packages (from typer<0.10.0,>=0.3.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (8.1.8)
+#17 12.13 Requirement already satisfied: cloudpathlib<0.17.0,>=0.7.0 in /usr/local/lib/python3.11/site-packages (from weasel<0.4.0,>=0.1.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.16.0)
+#17 12.14 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.11/site-packages (from jinja2->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.0.2)
+#17 12.24 Requirement already satisfied: marisa-trie>=1.1.0 in /usr/local/lib/python3.11/site-packages (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.3.1)
+#17 14.05 Installing collected packages: en-core-web-sm
+#17 14.18 Successfully installed en-core-web-sm-3.7.1
+#17 14.18 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#17 16.55 Installing NLTK vader_lexicon into /root/nltk_data
+#17 19.83 [nltk_data] Downloading package vader_lexicon to /root/nltk_data...
+#17 DONE 20.9s
+
+#18 [web] exporting to image
+#18 exporting layers
+#18 ...
+
+#19 [worker_io] exporting to image
+#19 ...
+
+#20 [worker_cpu] exporting to image
+#20 ...
+
+#18 [web] exporting to image
+#18 exporting layers 192.0s done
+#18 exporting manifest sha256:38acff5bcf6960a9876a0a49c56d33ec540a6ab592c30372cdda722af729abd1 0.0s done
+#18 exporting config sha256:1ebbeab8de05439253edfdeda5ef83dd230f5892be5ef5ac23bddc14337b41a6 0.0s done
+#18 exporting attestation manifest sha256:7f4004d7e2e6e3d3bf93f9154f1ba4829297dfa8a345c1fa034a158899b266c0
+#18 exporting attestation manifest sha256:7f4004d7e2e6e3d3bf93f9154f1ba4829297dfa8a345c1fa034a158899b266c0 0.1s done
+#18 exporting manifest list sha256:307284bcb04ee195c5124a5f1d08c7dc8bef4502a1436b1f8c3d99375f0e4055 0.0s done
+#18 naming to docker.io/library/phishclassifier-web:latest 0.0s done
+#18 unpacking to docker.io/library/phishclassifier-web:latest
+#18 ...
+
+#19 [worker_io] exporting to image
+#19 exporting layers 192.0s done
+#19 exporting manifest sha256:bf5789025e7fc4c33c9e8386fa6fde36c9049b5efd31c446d71da0dfba281561 0.0s done
+#19 exporting config sha256:ba8a7835497fa9c63a023aef1f67950e0f7910eb02cf1cb69a7fcec661db2354 0.0s done
+#19 exporting attestation manifest sha256:1820a1b80799f0928ad7f392add4091d4f16eac5c392a01bcbe8c824ad3929b2 0.1s done
+#19 exporting manifest list sha256:15917648a33b2fcd7d32458a5fe3ae25ae11b3558baa91a900be926469ac5745 0.0s done
+#19 naming to docker.io/library/phishclassifier-worker_io:latest done
+#19 unpacking to docker.io/library/phishclassifier-worker_io:latest
+#19 ...
+
+#20 [worker_cpu] exporting to image
+#20 exporting layers 192.0s done
+#20 exporting manifest sha256:2a6074dc53383bf622ca64eb06eefd9edaad34eb1b9e2b0c02ed0b08abe6e29c 0.0s done
+#20 exporting config sha256:1d759ca3feb8a65476b28ef9d94d8f352252455809c2e0ec8ff332bbd2697ab7 0.0s done
+#20 exporting attestation manifest sha256:35a1f15b4e27ac6f998ba144483cb0e2455767c96b583d2cfb149de0d71d9d3f 0.0s done
+#20 exporting manifest list sha256:1480cd3bccb2698b5eb0c0f17668912694d4dedd32e5472173309288e2eda615 0.0s done
+#20 naming to docker.io/library/phishclassifier-worker_cpu:latest 0.0s done
+#20 unpacking to docker.io/library/phishclassifier-worker_cpu:latest
+#20 ...
+
+#18 [web] exporting to image
+#18 unpacking to docker.io/library/phishclassifier-web:latest 200.7s done
+#18 DONE 392.9s
+
+#20 [worker_cpu] exporting to image
+#20 unpacking to docker.io/library/phishclassifier-worker_cpu:latest 200.7s done
+#20 DONE 392.9s
+
+#19 [worker_io] exporting to image
+#19 unpacking to docker.io/library/phishclassifier-worker_io:latest 200.7s done
+#19 DONE 392.9s
+
+#21 [web] resolving provenance for metadata file
+#21 DONE 0.1s
+
+#22 [worker_cpu] resolving provenance for metadata file
+#22 DONE 0.0s
+
+#23 [worker_io] resolving provenance for metadata file
+#23 DONE 0.1s
+ phishclassifier-web  Built
+ phishclassifier-worker_cpu  Built
+ phishclassifier-worker_io  Built
