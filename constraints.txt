@@ -1,0 +1,88 @@
+# constraints.txt — top-level runtime pins. Rebuild CI wheelhouse when you change these pins.
+# Top-level runtime and required packages (match requirements-runtime.txt)
+flask==2.2.5
+blinker==1.9.0
+click==8.3.0
+colorama==0.4.6
+itsdangerous==2.2.0
+Jinja2==3.1.6
+joblib==1.4.2
+MarkupSafe==3.0.2
+nltk==3.9.1
+numpy==1.26.4
+pandas==2.2.3
+python-dateutil==2.9.0.post0
+pytz==2025.2
+regex==2024.11.6
+scikit-learn==1.6.1
+scipy==1.15.3
+six==1.17.0
+threadpoolctl==3.6.0
+tqdm==4.67.1
+tzdata==2025.2
+Werkzeug==2.2.3
+ddtrace==3.8.0
+redis==6.1.0
+Flask-SQLAlchemy==3.0.5
+Flask-Cors==6.0.1
+prometheus_flask_exporter==0.20.1
+Flask-WTF==1.2.2
+Flask-Login==0.6.3
+fluent-logger==0.11.1
+rapidfuzz==2.13.7
+eventlet==0.40.3
+dnspython==2.2.1
+Flask-SocketIO==5.5.1
+bleach==6.1.0
+requests==2.32.5
+gunicorn==20.1.0
+openai==0.27.0
+matplotlib==3.10.6
+vaderSentiment==3.3.2
+textstat==0.7.1
+celery==5.5.2
+Flasgger==0.9.7.1
+# Heavy training / explainability / registry packages (included in runtime wheelhouse)
+lightgbm==4.6.0
+shap==0.48.0
+mlflow==3.4.0
+sentence-transformers==2.3.1
+
+# Note: torch is index- and platform-tagged (example: torch==2.0.1+cpu).
+# Do NOT pin torch here with an index suffix unless you will include the exact matching wheel in the wheelhouse.
+# When building the CI wheelhouse to include torch CPU wheels, use:
+#   pip wheel --wheel-dir=/wheels --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-runtime.txt -c constraints.txt
+# The requirements-runtime.txt contains the index-tagged torch line so CI will include the matching wheel.
+
+# Common transitive pins and commonly conflicting libraries (explicit to aid resolution)
+protobuf==6.32.1
+pillow==11.3.0
+pyyaml==6.0.3
+msgpack==1.1.1
+aiohttp==3.13.0
+multidict==6.7.0
+yarl==1.22.0
+kiwisolver==1.4.9
+fonttools==4.60.1
+cycler==0.12.1
+packaging==25.0
+zipp==3.23.0
+typing_extensions==4.15.0
+wrapt==1.17.3
+greenlet==3.2.4
+sqlalchemy==2.0.43
+prometheus-client==0.23.1
+wtforms==3.2.1
+billiard==4.2.2
+kombu==5.5.4
+vine==5.1.0
+importlib-metadata==8.7.0
+attrs==25.4.0
+jsonschema==4.25.1
+jsonschema-specifications==2025.9.1
+rpds-py==0.27.1
+webencodings==0.5.1
+charset_normalizer==3.4.4
+idna==3.10
+urllib3==2.5.0
+certifi==2025.10.5

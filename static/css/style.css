@@ -1,0 +1,410 @@
+/* ================================================================= */
+/*                            GLOBAL STYLE                          */
+/* ================================================================= */
+
+/* Import futuristic, tech-centric fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Reset and box-sizing setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with a dark neon background image and overlay */
+body {
+  font-family: 'Roboto', sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://wallpaperaccess.com/full/234599.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header styling with neon accents */
+header {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  border-bottom: 2px solid #00e676;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5em;
+  color: #00e676;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  from { text-shadow: 0 0 10px #00e676, 0 0 20px #00e676, 0 0 30px #00e676; }
+  to   { text-shadow: 0 0 20px #66ff99, 0 0 30px #66ff99, 0 0 40px #66ff99; }
+}
+
+/* Navigation styling (base) */
+nav {
+  background: #222;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #00e676;
+}
+
+nav a {
+  color: #00e676;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover { color: #66ff99; }
+
+/* Main container styling */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #1e1e1e;
+  border: 1px solid #00e676;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px rgba(0,230,118,0.5);
+}
+
+/* Descriptive text styling */
+.description {
+  color: #e0e0e0;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Headings */
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e676;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form label { display: block; margin-bottom: 10px; font-weight: 500; }
+
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #333;
+  border: 1px solid #00e676;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form textarea:focus {
+  border-color: #66ff99;
+  outline: none;
+  box-shadow: 0 0 10px 2px rgba(102,255,153,0.5);
+}
+
+form input[type="submit"] {
+  background: #00e676;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+  background: #66ff99;
+  transform: scale(1.05);
+}
+
+/* Brighter Result Box Styling */
+.result {
+  margin-top: 20px;
+  padding: 25px;
+  background: rgba(70,70,70,0.9);
+  border: 2px solid rgba(0,230,118,0.9);
+  border-radius: 8px;
+  font-size: 22px;
+  box-shadow: 0 0 20px rgba(0,230,118,1);
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: center;
+}
+
+.result h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 10px;
+  color: #FFD700;
+  font-size: 2.2em;
+}
+
+.result p { color: #FFD700; margin-top: 10px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Loading indicator styling */
+#loading { font-style: italic; color: #66ff99; text-align: center; margin-top: 20px; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+/* ================================================================= */
+/*                    LOGIN & MODAL SPECIFIC STYLES                 */
+/* ================================================================= */
+
+.site-title { font-family: 'Orbitron', sans-serif; font-size: 3rem; color: #00e676; text-shadow: 0 0 8px #00e676, 0 0 16px #66ff99; margin-bottom: 2rem; }
+
+.login-container {
+  max-width: 380px;
+  margin: 0 auto 3rem;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border: 1px solid #00e676;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 230, 118, 0.5);
+}
+
+.login-heading { font-family: 'Orbitron', sans-serif; color: #00e676; margin-bottom: 1.5rem; font-size: 1.4rem; }
+
+.modal-backdrop.show { background-color: rgba(0, 0, 0, 0.85) !important; }
+
+.modal-content { background: rgba(0, 0, 0, 0.85); border-radius: 5px; border: 1px solid #00e676; }
+
+.modal-header, .modal-footer { border: none; padding: 1rem 1.5rem; }
+
+.modal-title { font-family: 'Orbitron', sans-serif; color: #00e676; text-shadow: 0 0 6px #66ff99; }
+
+.modal-header .close span { color: #fff; font-size: 1.4rem; }
+
+/* ================================================================= */
+/*                      NAVBAR BUTTONS LAYOUT                       */
+/* ================================================================= */
+
+.nav-button {
+  display: inline-block;
+  background: #00e676;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #111;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover { background: #66ff99; transform: scale(1.05); }
+
+.navbar-nav.w-100 { display: flex !important; flex-wrap: nowrap !important; justify-content: space-around !important; align-items: center; width: 100%; overflow-x: auto; }
+.navbar-nav.w-100 .nav-item { flex: 0 0 auto !important; margin: 0 5px; }
+.navbar-nav .nav-link.nav-button, .navbar-nav .nav-link { white-space: nowrap !important; }
+
+/* ================================================================= */
+/*                     ADMIN PAGE CARD LAYOUT                       */
+/* ================================================================= */
+
+.admin-card {
+  background: #1e1e1e;
+  border: 2px solid #00e676;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,230,118,0.4);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.admin-card .card-header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.75em;
+  color: #00e676;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-card p, .admin-card label, .admin-card table { font-size: 1.1em; line-height: 1.5; }
+.admin-card table th, .admin-card table td { padding: 18px 20px; }
+.admin-card .admin-form input, .admin-card .admin-form select, .admin-card .admin-form textarea { padding: 12px 15px; font-size: 1em; }
+.admin-card .filter-form { margin-top: 15px; }
+.admin-card h2 { font-size: 1.5em; color: #00e676; margin-bottom: 15px; }
+.admin-card button { padding: 10px 20px; font-size: 1em; }
+
+/* ================================================================= */
+/*                    CHART / ANALYSIS ADDITIONS                     */
+/* ================================================================= */
+
+.analysis-chart-wrap { display:flex; align-items:center; justify-content:center; }
+.analysis-chart-wrap canvas#analysisChart { width:100% !important; height:100% !important; max-height:100% !important; }
+
+#analysisDetailsPanel { transition: max-height 0.18s ease; box-sizing: border-box; }
+#analysis-details-toggle { margin-top:6px; background: transparent; border: 1px solid rgba(0,0,0,0.08); }
+
+@media (max-width: 576px) {
+  .modal-content { max-width: 95%; padding: 12px; }
+  .analysis-chart-wrap { height: 240px; }
+}
+
+/* ================================================================= */
+/*                     Quarantine UI additions and overrides         */
+/* ================================================================= */
+
+/* Quarantine row accents and score pills */
+.risk-accent { border-left: 6px solid transparent; padding-left: 10px; transition: background-color .12s ease, border-color .12s ease; }
+.score-pill { display:inline-block; border-radius:999px; padding:4px 8px; font-weight:700; font-size:13px; min-width:64px; text-align:center; box-shadow: 0 2px 6px rgba(0,0,0,0.35); }
+.score-low { background:#e6f7ea; color:#0b6623; border:1px solid rgba(11,102,35,0.08); }
+.score-mid { background:#fff7e6; color:#7a5200; border:1px solid rgba(122,82,0,0.08); }
+.score-high { background:#ffe6e6; color:#9b1b1b; border:1px solid rgba(155,27,27,0.08); }
+
+/* left border color hints when band applied to row (apply by template class) */
+.score-low.risk-accent { border-left-color: #16a34a; }
+.score-mid.risk-accent { border-left-color: #d97706; }
+.score-high.risk-accent { border-left-color: #b91c1c; }
+
+/* Row content layout: Subject primary, sender & preview secondary (darker muted underlines) */
+.row-content { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+
+/* Subject stays bright and prominent */
+.subject {
+  color: #9bf6d1; /* keep subject in teal/blue family but slightly muted vs pure white */
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60ch;
+}
+
+/* Sender: make it darker and more subdued to match original blue tone */
+.sender {
+  font-weight: 600;
+  color: #49c5b6; /* darker teal/blue than bright subject */
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60ch;
+}
+
+/* Row body (preview) should be noticeably darker (less bright) than before */
+.row-body {
+  color: rgba(200,200,200,0.62); /* darker / more muted so it's not too bright */
+  font-size: 13px;
+  line-height: 1.35;
+  max-width: 70ch;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-top: 4px;
+}
+
+/* Short preview variant */
+.preview-short { -webkit-line-clamp: 1; line-clamp: 1; }
+
+/* Actions and feedback labels: use same blue/teal family as sender/subject for cohesion but darker and less saturated */
+.action-group { display:flex; align-items:center; gap:8px; }
+.action-group .overflow-btn {
+  border-radius:6px; padding:6px 10px; background:transparent;
+  border:1px solid rgba(74, 198, 182, 0.08);
+  color:#49c5b6; /* darker teal same family */
+  cursor:pointer;
+}
+.overflow-menu {
+  display:none; position:absolute; right:0; top:38px; background:#1e1e1e;
+  border:1px solid rgba(255,255,255,0.04); border-radius:8px; padding:6px; min-width:160px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.6); z-index:200;
+}
+.overflow-menu.show { display:block; }
+.overflow-menu button { display:block; width:100%; padding:8px 10px; background:transparent; border:none; color:#e0e0e0; text-align:left; cursor:pointer; }
+.overflow-menu button.destruct { color:#f87171; }
+
+/* Status badge inserted by JS (released/deleted/updating) */
+.status-badge {
+  display:inline-block; min-width:60px; padding:6px 10px; border-radius:14px; font-size:12px; font-weight:700; color:#fff; text-align:center; margin-right:8px; vertical-align:middle; box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+}
+.status-badge.released { background: #28a745; }
+.status-badge.deleted  { background: #dc3545; }
+.status-badge.updating { background: #6c757d; }
+
+/* Feedback button group: make base buttons slightly darker and label color aligned with teal family */
+.feedback-controls { display:flex; gap:6px; align-items:center; }
+.fb-btn {
+  width:36px; height:36px; border-radius:8px; border:1px solid rgba(255,255,255,0.04);
+  background:#0e0f11; /* darker than before */
+  color:#a9f3e6; /* muted teal for icon/text */
+  font-weight:700; cursor:pointer; display:inline-flex;
+  align-items:center; justify-content:center; transition:transform .08s ease, box-shadow .08s ease;
+}
+.fb-btn:hover { transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,0.06); }
+.fb-btn.active { color:#fff; box-shadow:0 6px 18px rgba(0,0,0,0.6); }
+.fb-none.active { background:#3f4146; }
+.fb-fp.active { background:#14794f; }
+.fb-fn.active { background:#b56a2a; }
+
+/* Score pill & contrast */
+.score-pill { box-shadow: 0 2px 6px rgba(0,0,0,0.35); }
+
+/* Toast styles used by quarantine-dashboard.js */
+.mini-toast {
+  display:flex; align-items:center; gap:8px; font-size:14px;
+  position: fixed; right: 16px; bottom: 16px; background: #111; color: #fff;
+  padding: 10px 14px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); z-index: 9999;
+}
+.mini-toast button { cursor:pointer; background:transparent; border:1px solid rgba(255,255,255,0.08); color:#fff; padding:4px 8px; border-radius:6px; }
+
+/* Accessibility: focus styles for interactive elements */
+.fb-btn:focus, .overflow-btn:focus, .action-group button:focus, .score-pill:focus, .bulk-checkbox:focus {
+  outline: 3px solid rgba(102,255,153,0.18);
+  outline-offset: 2px;
+}
+
+/* Table tweaks to accommodate multi-line row content */
+#quarantine-table td { vertical-align: middle; }
+#quarantine-table td .row-content { width: 100%; }
+
+/* Make the subject column take more horizontal space */
+#quarantine-table th:nth-child(3), #quarantine-table td:nth-child(3) { width: 42%; }
+
+/* Hover behavior: use subtle dark overlay to match theme (no bright green on hover) */
+#quarantine-table tbody tr:hover {
+  background: rgba(0,0,0,0.12);
+  transition: background 0.12s ease;
+}
+
+/* small responsive tweaks for quarantine visuals */
+@media (max-width: 992px) {
+  .subject { font-size: 14px; color: #9bead8; }
+  .sender { font-size: 12px; color: #48bfb0; }
+  .row-body { -webkit-line-clamp: 2; line-clamp: 2; font-size: 12px; color: rgba(200,200,200,0.6); }
+  #quarantine-table th:nth-child(3), #quarantine-table td:nth-child(3) { width: 50%; }
+}
+
+@media (max-width: 768px) {
+  .admin-card .card-header { font-size: 1.25rem; }
+  .score-pill { min-width:48px; font-size:12px; padding:3px 6px; }
+  .preview { display:none; }
+  .overflow-menu { right: -8px; top:40px; }
+  .row-body { -webkit-line-clamp: 1; line-clamp: 1; color: rgba(200,200,200,0.62); }
+  #quarantine-table th:nth-child(3), #quarantine-table td:nth-child(3) { width: auto; }
+}
+
+/* ================================================================= */
+/*                      Minor utilities and hygiene                   */
+/* ================================================================= */
+
+/* ensure links in table are readable */
+#quarantine-table a { color: #49c5b6; text-decoration: none; }
+#quarantine-table a:hover { color: #66ff99; text-decoration: underline; }

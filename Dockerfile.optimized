@@ -1,0 +1,53 @@
+# Stage 1: builder - install wheels and dependencies
+FROM python:3.11-slim-bullseye AS builder
+ENV PIP_DEFAULT_TIMEOUT=120 PYTHONUNBUFFERED=1
+WORKDIR /src
+COPY ./wheels /wheels
+
+# Copy wheels and project source into builder (source copied so wheels or packaging can be inspected if needed)
+COPY ./wheels /wheels
+COPY requirements-runtime.txt constraints.txt /src/
+COPY . /src
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends build-essential ca-certificates \
+ && pip install --no-cache-dir --find-links=/wheels -r /src/requirements-runtime.txt -c /src/constraints.txt \
+ && pip install --no-cache-dir --upgrade --force-reinstall gunicorn \
+ && if ls /wheels/en_core_web_sm-* 1> /dev/null 2>&1; then \
+      pip install --find-links=/wheels /wheels/en_core_web_sm-*; \
+    fi \
+ && rm -rf /var/lib/apt/lists/* /root/.cache/pip
+
+# Stage 2: runtime - minimal image
+FROM python:3.11-slim-bullseye
+ENV PYTHONUNBUFFERED=1
+ENV NLTK_DATA=/home/app/.cache/nltk_data
+# Make application source importable at runtime without requiring packaging
+ENV PYTHONPATH=/app
+
+WORKDIR /app
+
+# Install only runtime apt deps needed at runtime
+RUN apt-get update && apt-get install -y --no-install-recommends tini libatlas3-base \
+ && rm -rf /var/lib/apt/lists/*
+
+# Copy site-packages and console scripts from builder (gunicorn console script will be available)
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
+
+# Copy only runtime artifacts (app code, small model artifacts if you need them)
+COPY . /app
+
+# Remove wheelhouse from final image to save space if present
+RUN rm -rf /app/wheels /wheels || true
+
+# Create a non-root user and set up only runtime-writable dirs, make /app readable by app
+RUN groupadd -r app && useradd -r -g app -m -d /home/app app \
+ && mkdir -p /home/app/.cache/nltk_data /var/log/phishclassifier /home/app/.cache \
+ && chown -R app:app /home/app/.cache /var/log/phishclassifier \
+ && chown -R app:app /app || true
+
+USER app
+
+ENTRYPOINT ["/usr/bin/tini","--"]
+CMD ["python","wsgi.py"]

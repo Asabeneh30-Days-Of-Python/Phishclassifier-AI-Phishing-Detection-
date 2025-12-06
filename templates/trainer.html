@@ -1,0 +1,374 @@
+{# templates/trainer.html #}
+{% extends "base.html" %}
+{% block title %}Model Training Console - PhishClassifier{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <!-- Mermaid only on demand -->
+  <script>mermaid.initialize({ startOnLoad: false });</script>
+
+  <!-- highlight animations -->
+  <style>
+    @keyframes nodePulse {
+      0%,100% { transform: scale(1); }
+      50%     { transform: scale(1.2); }
+    }
+    @keyframes drawDash {
+      to { stroke-dashoffset: 0; }
+    }
+    .mermaid svg .node.active rect {
+      animation: nodePulse 1s ease-in-out;
+      stroke: #ff5722 !important;
+      stroke-width: 5 !important;
+    }
+    .mermaid svg .edgePath.active path {
+      stroke: #4caf50 !important;
+      stroke-width: 4 !important;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawDash 1s linear forwards;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <button
+    type="button"
+    class="btn btn-info mb-4"
+    data-toggle="modal"
+    data-target="#pipelineDiagramModal"
+  >
+    Show Training Pipeline Diagram
+  </button>
+
+  <button
+    id="record-demo"
+    type="button"
+    class="btn btn-secondary mb-4 ml-2"
+  >
+    Record Demo Video
+  </button>
+
+  <!-- pipeline modal -->
+  <div class="modal fade"
+       id="pipelineDiagramModal"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="pipelineDiagramLabel"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="pipelineDiagramLabel">
+            Model Training Pipeline
+          </h5>
+          <button type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="flowchart-container" style="position:relative;">
+            <pre class="mermaid" style="white-space: pre; margin:0;">
+flowchart TB
+U["User Browser"] -->|"POST /trainer"| W["Flask Web Service"]
+W -->|"DB insert"| DB["Database"]
+W -->|"emit pending"| D1["Socket.IO"]
+W -->|"enqueue"| R["Redis Broker"]
+R -->|"deliver"| C["Celery Worker"]
+C -->|"emit running"| D2["Socket.IO"]
+C -->|"train"| T["train_and_save_model()"]
+T -->|"save"| S["Model Storage"]
+C -->|"emit completed"| D3["Socket.IO"]
+D3 -->|"ws push"| U
+            </pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-card">
+    <div class="card-header">Model Training Console</div>
+    <div class="admin-card-body">
+      <form id="train-form"
+            action="{{ url_for('trainer.train') }}"
+            method="post">
+        <p>Select one or more datasets and click “Start Training”:</p>
+        <div class="form-group">
+          {% for ds in datasets %}
+            <div class="form-check">
+              <input class="form-check-input"
+                     type="checkbox"
+                     id="ds_{{ ds.id }}"
+                     name="datasets"
+                     value="{{ ds.id }}">
+              <label class="form-check-label"
+                     for="ds_{{ ds.id }}">
+                {{ ds.label }}
+              </label>
+            </div>
+          {% endfor %}
+        </div>
+        <button type="submit"
+                class="btn btn-warning mt-3">
+          Start Training
+        </button>
+      </form>
+
+      <hr>
+
+      <h5>Training Jobs</h5>
+      <div class="btn-group mb-3" role="group">
+        <button type="button"
+                class="btn btn-sm btn-outline-primary filter-btn active"
+                data-status="all">All</button>
+        <button type="button"
+                class="btn btn-sm btn-outline-success filter-btn"
+                data-status="completed">Completed</button>
+        <button type="button"
+                class="btn btn-sm btn-outline-warning filter-btn"
+                data-status="running">Running</button>
+        <button type="button"
+                class="btn btn-sm btn-outline-danger filter-btn"
+                data-status="failed">Failed</button>
+        <button type="button"
+                class="btn btn-sm btn-outline-secondary filter-btn"
+                data-status="pending">Pending</button>
+      </div>
+
+      <ul id="training-jobs" class="list-group">
+        {% for job in jobs %}
+          <li class="list-group-item"
+              data-id="{{ job.id }}"
+              data-status="{{ job.status }}">
+            <strong>Job {{ job.id }}:</strong> {{ job.status }}<br>
+            <small>Datasets: {{ job.datasets | join(', ') }}</small>
+          </li>
+        {% else %}
+          <li class="list-group-item text-muted">
+            No jobs yet.
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('▷ trainer.js loaded');
+
+    // 1) Render Mermaid on modal show
+    $('#pipelineDiagramModal').on('shown.bs.modal', function () {
+      const pre = this.querySelector('pre.mermaid');
+      if (pre && !pre.dataset.rendered) {
+        pre.dataset.rendered = 'true';
+        mermaid.init({}, pre);
+      }
+    });
+    $('#pipelineDiagramModal').on('hide.bs.modal', () => {
+      document.activeElement?.blur();
+    });
+
+    // 2) Form submit & filtering
+    const form    = document.getElementById('train-form');
+    const list    = document.getElementById('training-jobs');
+    const buttons = document.querySelectorAll('.filter-btn');
+    let   currentFilter = 'all';
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const res  = await fetch(form.action, {
+        method:  'POST',
+        body:    new FormData(form),
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      });
+      const json = await res.json();
+      const li   = document.createElement('li');
+      li.className      = 'list-group-item';
+      li.dataset.id     = json.id;
+      li.dataset.status = 'pending';
+      li.innerHTML      = `
+        <strong>Job ${json.id}:</strong> pending<br>
+        <small>Datasets: ${json.datasets.join(', ')}</small>
+      `;
+      list.prepend(li);
+      form.querySelectorAll('input[name="datasets"]').forEach(cb => cb.checked = false);
+      applyFilter();
+    });
+
+    function applyFilter() {
+      list.querySelectorAll('li[data-status]').forEach(li => {
+        li.style.display =
+          currentFilter === 'all' || li.dataset.status === currentFilter
+            ? '' : 'none';
+      });
+    }
+    buttons.forEach(btn =>
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.status;
+        applyFilter();
+      })
+    );
+
+    // 3) Highlight helper for arbitrary node & edge
+    function highlightEdge(from, to) {
+      const edge = document.querySelector(
+        `.mermaid svg .edgePath[id*='${from}'][id*='${to}'] path`
+      );
+      if (edge) {
+        edge.parentElement.classList.add('active');
+        setTimeout(() => edge.parentElement.classList.remove('active'), 1200);
+      }
+    }
+    function highlightNode(id) {
+      document.querySelectorAll('.mermaid svg .node')
+              .forEach(n => n.classList.remove('active'));
+      const node = document.querySelector(`.mermaid svg .node[id*='${id}']`);
+      if (node) node.classList.add('active');
+    }
+
+    // 4) Live updates via Socket.IO
+    const socket = io('/trainer', { transports: ['polling','websocket'] });
+    socket.on('connect',       () => console.log('⚡️ Socket.IO connected'));
+    socket.on('training_update', data => {
+      let li = list.querySelector(`li[data-id="${data.id}"]`);
+      if (!li) {
+        li = document.createElement('li');
+        li.className       = 'list-group-item';
+        li.dataset.id      = data.id;
+        list.prepend(li);
+      }
+      li.dataset.status   = data.status;
+      li.innerHTML        = `
+        <strong>Job ${data.id}:</strong> ${data.status}<br>
+        <small>Datasets: ${data.datasets.join(', ')}</small>
+      `;
+      applyFilter();
+      // only highlight final state
+      const map = { pending:'W', running:'C', completed:'D', failed:'D' };
+      highlightNode(map[data.status]);
+    });
+
+    // 5) Demo recording: full pipeline
+    document.getElementById('record-demo')
+      .addEventListener('click', async () => {
+
+      // a) pick & flash dataset
+      const inputs = form.querySelectorAll('input[name="datasets"]');
+      inputs.forEach(i=>i.checked=false);
+      const idx = Math.floor(Math.random()*inputs.length);
+      inputs[idx].checked = true;
+      await anime({
+        targets: inputs[idx].closest('.form-check'),
+        backgroundColor: ['#fff','#d0f0fd','#fff'],
+        duration: 800
+      }).finished;
+
+      // b) flash submit & fire
+      const btn = form.querySelector('button[type="submit"]');
+      await anime({
+        targets: btn,
+        backgroundColor: ['#ffc107','#ffecb3','#ffc107'],
+        duration: 800
+      }).finished;
+      form.dispatchEvent(new Event('submit',{ cancelable:true }));
+
+      // c) open & render chart
+      $('#pipelineDiagramModal').modal({ backdrop:false, show:true });
+      await new Promise(r=>setTimeout(r,600));
+      const pre = document.querySelector('pre.mermaid');
+      if (pre && !pre.dataset.rendered) {
+        pre.dataset.rendered = 'true';
+        mermaid.init({},pre);
+      }
+      await new Promise(r=>setTimeout(r,300));
+
+      // d) SVG→Canvas capture
+      const svgEl = document.querySelector('.flowchart-container svg');
+      const rect  = svgEl.getBoundingClientRect();
+      const canvas = document.createElement('canvas');
+      canvas.width  = rect.width;
+      canvas.height = rect.height;
+      const ctx = canvas.getContext('2d');
+      document.body.appendChild(canvas);     // needed in DOM for Edge
+      canvas.style.position = 'fixed';
+      canvas.style.top      = `${rect.top}px`;
+      canvas.style.left     = `${rect.left}px`;
+      canvas.style.zIndex   = 9999;
+
+      // function to redraw SVG onto canvas
+      async function redraw() {
+        const data = new XMLSerializer().serializeToString(svgEl);
+        const img  = new Image();
+        img.src    = 'data:image/svg+xml;base64,' +
+                     btoa(unescape(encodeURIComponent(data)));
+        await new Promise(r=> img.onload = r);
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.drawImage(img, 0, 0);
+      }
+
+      await redraw();
+      const stream   = canvas.captureStream(30);
+      const recorder = new MediaRecorder(stream, { mimeType:'video/webm' });
+      const chunks   = [];
+      recorder.ondataavailable = e => chunks.push(e.data);
+      recorder.start();
+
+      // pipeline steps in sequence
+      const steps = [
+        { e:['U','W'],   n:'W' },
+        { e:['W','DB'],  n:'DB' },
+        { e:['W','D1'],  n:'D1' },
+        { e:['W','R'],   n:'R' },
+        { e:['R','C'],   n:'C' },
+        { e:['C','D2'],  n:'D2' },
+        { e:['C','T'],   n:'T' },
+        { e:['T','S'],   n:'S' },
+        { e:['C','D3'],  n:'D3' },
+        { e:['D3','U'],  n:'U' }
+      ];
+
+      for (const s of steps) {
+        highlightEdge(s.e[0], s.e[1]);
+        highlightNode(s.n);
+        await new Promise(r=>setTimeout(r, 1400));
+        await redraw();
+      }
+
+      // finish up
+      recorder.stop();
+      recorder.onstop = () => {
+        const blob = new Blob(chunks,{ type:'video/webm' });
+        const url  = URL.createObjectURL(blob);
+        const a    = document.createElement('a');
+        a.style.display = 'none';
+        a.href          = url;
+        a.download      = 'training-demo.webm';
+        document.body.appendChild(a);
+        a.click();
+        URL.revokeObjectURL(url);
+
+        // cleanup
+        canvas.remove();
+        $('#pipelineDiagramModal').modal('hide');
+      };
+    });
+
+  });  
+  </script>
+{% endblock %}

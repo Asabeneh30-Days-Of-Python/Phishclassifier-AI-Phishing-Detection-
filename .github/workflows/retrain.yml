@@ -1,0 +1,157 @@
+name: Retrain and Publish Model
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
+jobs:
+  build-wheels:
+    name: Build wheelhouse
+    runs-on: ubuntu-latest
+    outputs:
+      wheels-artifact: wheels
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential git gcc g++ cmake libatlas-base-dev libopenblas-dev liblapack-dev libgomp1 python3-dev
+
+      - name: Upgrade pip tools
+        run: python -m pip install --upgrade pip setuptools wheel
+
+      - name: Create wheel dir
+        run: mkdir -p /tmp/wheels
+
+      - name: Build wheelhouse
+        run: |
+          # Build runtime wheelhouse and include PyTorch CPU wheels
+          EXTRA_INDEX="--extra-index-url https://download.pytorch.org/whl/cpu"
+          PIP_DEFAULT_TIMEOUT=120 pip --disable-pip-version-check --retries 10 wheel \
+            --wheel-dir=/tmp/wheels --prefer-binary $EXTRA_INDEX \
+            -r requirements-runtime.txt -c constraints.txt
+
+      - name: Upload wheelhouse artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheels
+          path: /tmp/wheels
+
+  retrain:
+    name: Retrain
+    runs-on: ubuntu-latest
+    needs: build-wheels
+    env:
+      MODEL_DIR: models
+      DOCKER_REGISTRY: ghcr.io
+      IMAGE_REPO: ${{ github.repository }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download wheelhouse artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: wheels
+          path: ./wheels
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements-runtime.txt','**/constraints.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies from wheelhouse with constraints (for retrain step)
+        run: |
+          python -m pip install --upgrade pip
+          # Use wheelhouse to install all runtime+dev deps used by training script
+          pip install --no-index --find-links=./wheels -r requirements-dev.txt -c constraints.txt
+
+      - name: Prepare workspace
+        run: mkdir -p $MODEL_DIR
+
+      - name: Retrain model
+        id: train
+        run: |
+          python scripts/train_and_publish.py \
+            --output ${MODEL_DIR}/phishing_model.pkl \
+            --thresholds ${MODEL_DIR}/thresholds.json
+
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: phishing_model
+          path: models/phishing_model.pkl
+
+      - name: Set IMAGE tag (compute)
+        id: set-image
+        env:
+          SHA: ${{ github.sha }}
+          DOCKER_REGISTRY: ${{ env.DOCKER_REGISTRY }}
+          IMAGE_REPO: ${{ env.IMAGE_REPO }}
+        run: |
+          DATE=$(date -u +'%Y%m%dT%H%M%SZ')
+          TAG="${DATE}-${SHA:0:7}"
+          IMAGE="${DOCKER_REGISTRY}/${IMAGE_REPO}:${TAG}"
+          echo "IMAGE=${IMAGE}" >> $GITHUB_ENV
+          echo "IMAGE=${IMAGE}"
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Download wheels into build context (prepare for docker build)
+        run: |
+          # wheels are already at ./wheels from download-artifact step; ensure path exists and list contents
+          ls -lah ./wheels | sed -n '1,200p'
+
+      - name: Build and push with cache (image will include dev/training deps because INSTALL_DEV=1)
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ env.IMAGE }}
+          cache-from: type=gha,scope=phishclassifier-cache
+          cache-to: type=gha,mode=max,scope=phishclassifier-cache
+          build-args: |
+            INSTALL_DEV=1
+
+      - name: Log in to GHCR using GITHUB_TOKEN
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.DOCKER_REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Register model (optional)
+        if: success()
+        env:
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          python scripts/save_to_registry.py \
+            --model models/phishing_model.pkl \
+            --thresholds models/thresholds.json \
+            --git-sha $GIT_SHA

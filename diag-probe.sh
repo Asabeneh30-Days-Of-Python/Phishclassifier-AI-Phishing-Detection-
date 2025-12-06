@@ -1,0 +1,23 @@
+#!/bin/sh
+printf 'CELERY_BROKER_URL=%s\n' "$CELERY_BROKER_URL"
+proto_and_rest=${CELERY_BROKER_URL#*://}
+hostport=${proto_and_rest%%/*}
+suffix=${hostport##*:}
+printf 'proto_and_rest=%s\nhostport=%s\nsuffix=%s\n' "$proto_and_rest" "$hostport" "$suffix"
+
+python3 - <<PY 2> /tmp/probe.err
+import socket,sys
+host = "${hostport%%:*}"
+port = int(${suffix})
+try:
+    s = socket.create_connection((host, port), timeout=3)
+    s.close()
+    print('PY_OK')
+except Exception as e:
+    print('PY_FAIL', type(e).__name__, str(e))
+    sys.exit(1)
+PY
+
+echo PROBE_EXIT=$?
+echo '--- probe stderr ---'
+sed -n '1,200p' /tmp/probe.err

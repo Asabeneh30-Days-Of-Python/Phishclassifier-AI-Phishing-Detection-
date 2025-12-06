@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+{% block title %}Admin Metrics - PhishClassifier{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="admin-card">
+    <!-- Card Header -->
+    <div class="card-header">Application Performance Metrics</div>
+
+    <!-- Card Body -->
+    <div class="admin-card-body">
+      <div class="row text-center mb-4">
+        <div class="col-md-4">
+          <h4 class="metric-title">Total Feedback</h4>
+          <p class="metric-value">{{ stats.total_feedback }}</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="metric-title">Active Users</h4>
+          <p class="metric-value">{{ stats.active_users }}</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="metric-title">Prediction Success Rate</h4>
+          <p class="metric-value">
+            {{ (stats.prediction_success_rate * 100) | round(1) }}%
+          </p>
+        </div>
+      </div>
+
+      <h3 class="mt-4 mb-3">Latest Feedback</h3>
+      {% if latest_feedback %}
+        <ul class="list-group">
+          {% for feedback in latest_feedback %}
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <p class="mb-1">{{ feedback.feedback_text }}</p>
+                  <small class="text-muted">
+                    {{ feedback.created_at.strftime('%Y-%m-%d %H:%M:%S') }}
+                  </small>
+                </div>
+                <span class="badge badge-light">New</span>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No recent feedback to display.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

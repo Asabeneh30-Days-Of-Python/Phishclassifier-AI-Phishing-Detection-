@@ -1,0 +1,349 @@
+{# templates/admin_users.html #}
+{% extends "base.html" %}
+
+{% block title %}User Management – PhishClassifier{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="admin-card">
+    <div class="card-header">User Management</div>
+    <div class="admin-card-body">
+
+      <div class="table-responsive mb-4">
+        <table class="table table-striped table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Username</th>
+              <th>Admin</th>
+              <th>Trainer</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for user in users %}
+            <tr>
+              <td>{{ user.username }}</td>
+
+              <!-- Admin status badge -->
+              <td>
+                {% if user.is_admin %}
+                  <span class="badge badge-success">Yes</span>
+                {% else %}
+                  <span class="badge badge-secondary">No</span>
+                {% endif %}
+              </td>
+
+              <!-- Trainer status badge: use canonical effective check -->
+              <td>
+                {% if user.is_trainer_effective %}
+                  <span class="badge badge-success">Yes</span>
+                {% else %}
+                  <span class="badge badge-secondary">No</span>
+                {% endif %}
+              </td>
+
+              <!-- Manage Roles button -->
+              <td>
+                <button
+                  class="btn btn-sm btn-primary"
+                  data-toggle="modal"
+                  data-target="#roleModal{{ user.id }}"
+                >Manage Roles</button>
+              </td>
+            </tr>
+
+            <!-- Role-management Modal -->
+            <div
+              class="modal fade"
+              id="roleModal{{ user.id }}"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="roleModalLabel{{ user.id }}"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <!-- Inline onsubmit retained for compatibility; fetch handler is authoritative -->
+                <form
+                  method="post"
+                  action="{{ url_for('edit_user', user_id=user.id) }}"
+                  onsubmit="
+                    (function(f){
+                      try{
+                        var tc = f.querySelector('input[name=&quot;is_trainer&quot;][type=&quot;checkbox&quot;]');
+                        var th = f.querySelector('input[type=&quot;hidden&quot;][name=&quot;is_trainer&quot;]');
+                        if(tc && th){ th.value = tc.checked ? '1' : '0'; }
+                        var ac = f.querySelector('input[name=&quot;is_admin&quot;][type=&quot;checkbox&quot;]');
+                        var ah = f.querySelector('input[type=&quot;hidden&quot;][name=&quot;is_admin&quot;]');
+                        if(ac && ah){ ah.value = ac.checked ? '1' : '0'; }
+                      }catch(e){}
+                      return true;
+                    })(this);
+                  "
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="roleModalLabel{{ user.id }}"
+                      >
+                        Roles for {{ user.username }}
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="form-check">
+                        <input type="hidden" name="is_admin" value="0">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="is_admin"
+                          value="1"
+                          id="adminCheck{{ user.id }}"
+                          {% if user.is_admin %}checked{% endif %}
+                        >
+                        <label
+                          class="form-check-label"
+                          for="adminCheck{{ user.id }}"
+                        >
+                          Admin
+                        </label>
+                      </div>
+
+                      <div class="form-check mt-2">
+                        <input type="hidden" name="is_trainer" value="0">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="is_trainer"
+                          value="1"
+                          id="trainerCheck{{ user.id }}"
+                          {% if user.is_trainer_effective %}checked{% endif %}
+                        >
+                        <label
+                          class="form-check-label"
+                          for="trainerCheck{{ user.id }}"
+                        >
+                          Trainer
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >Cancel</button>
+                      <!-- Changed to button type=button and marker class/data attr for fetch submit -->
+                      <button
+                        type="button"
+                        class="btn btn-primary save-roles-btn"
+                        data-user-id="{{ user.id }}"
+                      >Save</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            {% endfor %}
+
+            {% if not users %}
+            <tr>
+              <td colspan="4" class="text-center text-muted">
+                No users found.
+              </td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{# Fetch-based Save handler: use URLSearchParams so browser sets proper form content-type #}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Prevent native form submission for role modals so only the fetch path is used.
+  document.querySelectorAll('form[action*="/admin/users/edit/"]').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      return false;
+    }, true);
+  });
+
+  // Attach handler to Save buttons that builds URLSearchParams body and posts via fetch.
+  document.querySelectorAll('button.save-roles-btn').forEach(function(btn) {
+    btn.addEventListener('click', function (ev) {
+      try {
+        ev.preventDefault();
+        ev.stopPropagation();
+
+        var userId = btn.getAttribute('data-user-id');
+        if (!userId) return;
+
+        // Deterministic lookup by stable IDs rather than modal traversal
+        var adminCheckbox = document.getElementById('adminCheck' + userId);
+        var trainerCheckbox = document.getElementById('trainerCheck' + userId);
+
+        // Fallback to modal/form traversal only if IDs not present
+        if (!adminCheckbox || !trainerCheckbox) {
+          var modal = btn.closest('.modal');
+          if (!modal) return;
+          var form = modal.querySelector('form');
+          if (!form) return;
+          adminCheckbox = form.querySelector('input[name="is_admin"][type="checkbox"]');
+          trainerCheckbox = form.querySelector('input[name="is_trainer"][type="checkbox"]');
+        }
+
+        // Build a plain object for predictable encoding
+        var payload = {};
+        payload['is_admin'] = (adminCheckbox && adminCheckbox.checked) ? '1' : '0';
+        payload['is_trainer'] = (trainerCheckbox && trainerCheckbox.checked) ? '1' : '0';
+
+        // Include other named inputs in the form (e.g., csrf_token) deterministically
+        var formEl = document.querySelector('form[action*="/admin/users/edit/' + userId + '"]') || btn.closest('form') || (btn.closest('.modal') && btn.closest('.modal').querySelector('form'));
+        if (formEl) {
+          Array.from(formEl.querySelectorAll('input[name]')).forEach(function(inp){
+            if (inp.name === 'is_admin' || inp.name === 'is_trainer') return;
+            if (inp.type === 'checkbox') return;
+            payload[inp.name] = inp.value || '';
+          });
+        }
+
+        // Use URLSearchParams so the browser sets Content-Type and Content-Length correctly
+        var urlBody = new URLSearchParams();
+        for (var k in payload) {
+          if (!Object.prototype.hasOwnProperty.call(payload, k)) continue;
+          urlBody.append(k, payload[k]);
+        }
+
+        // Ensure CSRF header if token present in form (some frameworks expect header)
+        var csrf = formEl && formEl.querySelector('input[name="csrf_token"]');
+        var headers = { 'X-Requested-With': 'XMLHttpRequest' };
+        if (csrf && csrf.value) {
+          headers['X-CSRFToken'] = csrf.value;
+        }
+
+        var action = formEl ? formEl.getAttribute('action') : (btn.closest('.modal') && btn.closest('.modal').querySelector('form') && btn.closest('.modal').querySelector('form').getAttribute('action')) || window.location.pathname;
+
+        fetch(action, {
+          method: 'POST',
+          body: urlBody,
+          credentials: 'same-origin',
+          headers: headers
+        }).then(function(resp) {
+          // treat redirects and OK responses as success and reload to reflect changes
+          if (resp.ok || resp.status === 302) {
+            try { if (window.jQuery) { jQuery(btn.closest('.modal')).modal('hide'); } } catch(e){}
+            window.location.reload();
+          } else {
+            resp.text().then(function(t){
+              console && console.warn && console.warn('roles update failed', resp.status, t);
+            });
+          }
+        }).catch(function(err) {
+          console && console.error && console.error('roles update error', err);
+        });
+
+      } catch (e) {
+        console && console.error && console.error('save-roles handler error', e);
+      }
+    }, false);
+  });
+
+  // Delegated: prevent any native submit for /admin/users/edit/* forms (capture phase)
+  document.addEventListener('submit', function(e){
+    try {
+      var t = e.target;
+      if (t && t.getAttribute && t.getAttribute('action') && t.getAttribute('action').indexOf('/admin/users/edit/') !== -1) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        return false;
+      }
+    } catch(err){}
+  }, true);
+
+  // Delegated: handle clicks on any current or future Save buttons
+  document.addEventListener('click', function(e){
+    try {
+      var el = e.target.closest && e.target.closest('.save-roles-btn');
+      if (!el) return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      var btn = el;
+      var userId = btn.getAttribute('data-user-id');
+      if (!userId) return;
+
+      // Deterministic lookup by stable IDs rather than modal traversal
+      var adminCheckbox = document.getElementById('adminCheck' + userId);
+      var trainerCheckbox = document.getElementById('trainerCheck' + userId);
+
+      // Fallback if necessary
+      if (!adminCheckbox || !trainerCheckbox) {
+        var modal = btn.closest('.modal') || document.querySelector('#roleModal' + userId);
+        var form = modal && modal.querySelector('form');
+        adminCheckbox = adminCheckbox || (form && form.querySelector('input[name="is_admin"][type="checkbox"]'));
+        trainerCheckbox = trainerCheckbox || (form && form.querySelector('input[name="is_trainer"][type="checkbox"]'));
+      }
+
+      if (!adminCheckbox || !trainerCheckbox) return;
+
+      var payload = {};
+      payload['is_admin'] = (adminCheckbox && adminCheckbox.checked) ? '1' : '0';
+      payload['is_trainer'] = (trainerCheckbox && trainerCheckbox.checked) ? '1' : '0';
+
+      var formEl = document.querySelector('form[action*="/admin/users/edit/' + userId + '"]') || (btn.closest('.modal') && btn.closest('.modal').querySelector('form'));
+      if (formEl) {
+        Array.from(formEl.querySelectorAll('input[name]')).forEach(function(inp){
+          if (inp.name === 'is_admin' || inp.name === 'is_trainer') return;
+          if (inp.type === 'checkbox') return;
+          payload[inp.name] = inp.value || '';
+        });
+      }
+
+      var urlBody = new URLSearchParams();
+      for (var k in payload) { if (Object.prototype.hasOwnProperty.call(payload,k)) urlBody.append(k, payload[k]); }
+      var csrf = formEl && formEl.querySelector('input[name="csrf_token"]');
+      var headers = { 'X-Requested-With': 'XMLHttpRequest' };
+      if (csrf && csrf.value) headers['X-CSRFToken'] = csrf.value;
+            var action = formEl ? formEl.getAttribute('action') : window.location.pathname;
+      
+            fetch(action, {
+              method: 'POST',
+              body: urlBody,
+              credentials: 'same-origin',
+              headers: headers
+            }).then(function(resp){
+              if (resp.ok || resp.status === 302) {
+                try { if (window.jQuery) { jQuery(btn.closest('.modal')).modal('hide'); } } catch(e){}
+                window.location.reload();
+              } else {
+                resp.text().then(function(t){
+                  console && console.warn && console.warn('roles update failed', resp.status, t);
+                });
+              }
+            }).catch(function(err){
+              console && console.error && console.error('roles update error', err);
+            });
+      
+          } catch (e) {
+            console && console.error && console.error('delegated save-roles handler error', e);
+          }
+        }, false);
+      
+        // end DOMContentLoaded handler
+      });
+      </script>
+{% endblock %}

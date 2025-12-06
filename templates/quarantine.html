@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="admin-card">
+
+    <!-- Card Header -->
+    <div class="card-header">Quarantine Dashboard</div>
+
+    <!-- Filter + Search form -->
+    <form
+      method="get"
+      action="{{ url_for('quarantine_page') }}"
+      class="filter-form form-row align-items-end mb-4"
+      aria-label="Quarantine filters"
+    >
+      <div class="form-group col-md-2">
+        <label for="start_date">Date from</label>
+        <input
+          type="date"
+          id="start_date"
+          name="start_date"
+          class="form-control"
+          value="{{ request.args.get('start_date', '') }}"
+        >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="end_date">to</label>
+        <input
+          type="date"
+          id="end_date"
+          name="end_date"
+          class="form-control"
+          value="{{ request.args.get('end_date', '') }}"
+        >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="min_score">Min score</label>
+        <input
+          type="number"
+          id="min_score"
+          name="min_score"
+          step="0.01"
+          class="form-control"
+          placeholder="min"
+          value="{{ request.args.get('min_score', '') }}"
+        >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="max_score">Max score</label>
+        <input
+          type="number"
+          id="max_score"
+          name="max_score"
+          step="0.01"
+          class="form-control"
+          placeholder="max"
+          value="{{ request.args.get('max_score', '') }}"
+        >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="domain">Domain</label>
+        <input
+          type="text"
+          id="domain"
+          name="domain"
+          class="form-control"
+          placeholder="example.com"
+          value="{{ request.args.get('domain', '') }}"
+        >
+      </div>
+      <div class="form-group col-md-2">
+        <label for="q">Search</label>
+        <input
+          type="search"
+          id="q"
+          name="q"
+          class="form-control"
+          placeholder="subject or body"
+          value="{{ request.args.get('q', '') }}"
+        >
+      </div>
+
+      <div class="form-group col-12 mt-3">
+        <button type="submit" class="btn btn-primary">Filter</button>
+        <a href="{{ url_for('quarantine_page') }}" class="btn btn-outline-light ml-2">Clear</a>
+      </div>
+    </form>
+
+    <!-- Bulk actions + Export -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <button id="bulk-release" class="btn btn-success mr-2" type="button">Release Selected</button>
+        <button id="bulk-delete" class="btn btn-danger" type="button">Delete Selected</button>
+      </div>
+      <div>
+        <a id="export-csv" data-export="csv" href="{{ csv_url }}" class="btn btn-outline-secondary btn-sm mr-1">
+          Export CSV
+        </a>
+        <a id="export-json" data-export="json" href="{{ json_url }}" class="btn btn-outline-secondary btn-sm">
+          Export JSON
+        </a>
+      </div>
+    </div>
+
+    <!-- Quarantine Table -->
+    <div class="table-responsive mb-4">
+      <table id="quarantine-table" class="table table-borderless" role="table" aria-describedby="quarantine-info">
+        <thead>
+          <tr>
+            <th style="width:40px;"><input type="checkbox" id="select-all" aria-label="Select all"></th>
+
+            {% set dir_sender = (request.args.get('sort')=='sender' and request.args.get('dir')=='asc') and 'desc' or 'asc' %}
+            <th><a href="{{ prefix }}sort=sender&dir={{ dir_sender }}">Sender</a></th>
+
+            {% set dir_subject = (request.args.get('sort')=='subject' and request.args.get('dir')=='asc') and 'desc' or 'asc' %}
+            <th><a href="{{ prefix }}sort=subject&dir={{ dir_subject }}">Subject</a></th>
+
+            {% set dir_received = (request.args.get('sort')=='received_at' and request.args.get('dir')=='asc') and 'desc' or 'asc' %}
+            <th><a href="{{ prefix }}sort=received_at&dir={{ dir_received }}">Received</a></th>
+
+            {% set dir_score = (request.args.get('sort')=='risk_score' and request.args.get('dir')=='asc') and 'desc' or 'asc' %}
+            <th><a href="{{ prefix }}sort=risk_score&dir={{ dir_score }}">Score</a></th>
+
+            <th>Feedback</th>
+            <th style="width:220px;">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for e in emails %}
+          {% set band = 'score-high' %}
+          {% if e.risk_score is not none %}
+            {% if e.risk_score < 0.1 %}
+              {% set band = 'score-low' %}
+            {% elif e.risk_score <= 0.2 %}
+              {% set band = 'score-mid' %}
+            {% else %}
+              {% set band = 'score-high' %}
+            {% endif %}
+          {% endif %}
+
+          <tr class="risk-accent {{ band }}" data-qid="{{ e.id }}" role="row">
+            <td><input type="checkbox" class="bulk-checkbox" value="{{ e.id }}" aria-label="Select email {{ e.id }}"></td>
+
+            <td>
+              <div class="sender" title="{{ e.sender }}">{{ e.sender }}</div>
+              <div class="muted small preview" title="Preview">{{ e._sentences|join(' ') }}</div>
+            </td>
+
+            <td><div class="subject" title="{{ e.subject }}">{{ e.subject }}</div></td>
+
+            <td>{{ e.received_at.strftime('%Y-%m-%d %H:%M:%S') if e.received_at else '—' }}</td>
+
+            <td>
+              <span class="score-pill {% if band=='score-low' %}score-low{% elif band=='score-mid' %}score-mid{% else %}score-high{% endif %}">
+                {% if e.risk_score is none %}—{% else %}{{ ('%.2f'|format(e.risk_score)) }}{% endif %}
+              </span>
+            </td>
+
+            <td class="feedback-cell">
+              <div class="feedback-controls" role="group" aria-label="Feedback for {{ e.id }}">
+                <button class="fb-btn fb-none {% if e.feedback=='none' %}active{% endif %}"
+                        data-qid="{{ e.id }}" data-val="none" title="No feedback" aria-pressed="{{ 'true' if e.feedback=='none' else 'false' }}">—</button>
+
+                <button class="fb-btn fb-fp {% if e.feedback=='false_positive' %}active{% endif %}"
+                        data-qid="{{ e.id }}" data-val="false_positive" title="False Positive" aria-pressed="{{ 'true' if e.feedback=='false_positive' else 'false' }}">▲</button>
+
+                <button class="fb-btn fb-fn {% if e.feedback=='false_negative' %}active{% endif %}"
+                        data-qid="{{ e.id }}" data-val="false_negative" title="False Negative" aria-pressed="{{ 'true' if e.feedback=='false_negative' else 'false' }}">▼</button>
+              </div>
+            </td>
+
+            <td>
+              <div class="d-flex justify-content-end align-items-center">
+                <form action="{{ url_for('release_email', qid=e.id) }}" method="post" class="mr-2 d-inline-block" aria-label="Release email {{ e.id }}">
+                  <button class="btn btn-sm btn-success" type="submit">Release</button>
+                </form>
+
+                <div class="action-group position-relative">
+                  <button class="btn btn-sm btn-outline-secondary mr-2 overflow-btn" type="button" onclick="toggleMenu(this)"
+                          aria-haspopup="true" aria-expanded="false" aria-label="More actions for {{ e.id }}">⋯</button>
+
+                  <div class="overflow-menu" role="menu" aria-hidden="true">
+                    <form action="{{ url_for('delete_email', qid=e.id) }}" method="post">
+                      <button type="submit" class="destruct" role="menuitem">Delete</button>
+                    </form>
+                    <form action="{{ url_for('submit_feedback') }}" method="get">
+                      <input type="hidden" name="qid" value="{{ e.id }}">
+                      <button type="submit" role="menuitem">Open feedback form</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          {% else %}
+          <tr>
+            <td colspan="7" class="text-center text-muted">
+              {% if filters_active %}
+                No emails found with these filters. Try clearing the Date or Score filters or widen the score range.
+              {% else %}
+                No emails found.
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    {% if pagination %}
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        {% for p in pagination.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+          {% if p %}
+            <li class="page-item{% if p==pagination.page %} active{% endif %}">
+              <a class="page-link" href="{{ url_for('quarantine_page') }}?page={{ p }}{% for k,v in request.args.items() if k != 'page' %}&{{ k }}={{ v }}{% endfor %}">{{ p }}</a>
+            </li>
+          {% else %}
+            <li class="page-item disabled">
+              <span class="page-link">…</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ url_for('static', filename='js/quarantine-dashboard.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/monitor-export-clicks.js') }}"></script>
+{% endblock %}

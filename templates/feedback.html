@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback - PhishClassifier{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2>Feedback</h2>
+  <p class="mb-4">
+    We value your input! Please share your thoughts and suggestions below so we can continue to improve our service.
+  </p>
+
+  <form action="{{ url_for('submit_feedback') }}" method="post">
+    <div class="form-group">
+      <label for="feedback">Your Feedback:</label>
+      <textarea class="form-control" id="feedback" name="feedback" rows="5" placeholder="Enter your feedback here..." required></textarea>
+    </div>
+    <!-- Hidden fields for predicted_label and correct_label (if needed) -->
+    <input type="hidden" name="predicted_label" value="">
+    <input type="hidden" name="correct_label" value="">
+
+    <button type="submit" class="btn btn-primary mt-3">Submit Feedback</button>
+  </form>
+
+  <!-- Flash messages for feedback confirmation -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show mt-3" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <!-- Section to display previously submitted feedback by the user -->
+  {% if my_feedback %}
+    <h3 class="mt-5">Your Submitted Feedback</h3>
+    <ul class="list-group">
+      {% for item in my_feedback %}
+        <li class="list-group-item">
+          <div><strong>Submitted</strong>: {{ item.created_at.strftime('%Y-%m-%d %H:%M') if item.created_at else '—' }}</div>
+          <div><strong>Your Feedback</strong>: {{ item.content }}</div>
+          {% if item.predicted_label %}
+            <div><em>Predicted:</em> {{ item.predicted_label }}</div>
+          {% endif %}
+          {% if item.correct_label %}
+            <div><em>Correct:</em> {{ item.correct_label }}</div>
+          {% endif %}
+          {% if item.admin_response %}
+            <div class="alert alert-secondary mt-2">
+              <strong>Admin Response:</strong> {{ item.admin_response }}
+            </div>
+          {% else %}
+            <div class="text-muted mt-2">No response yet.</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+{% endblock %}

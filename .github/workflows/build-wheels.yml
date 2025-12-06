@@ -1,0 +1,91 @@
+name: Build Wheels (wheelhouse)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'requirements-runtime.txt'
+      - 'constraints.txt'
+      - 'requirements-dev.txt'
+      - 'inputs.in'        # add when present
+
+jobs:
+  build-wheels:
+    name: Build and upload wheelhouse
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential git gcc g++ cmake libatlas-base-dev libopenblas-dev liblapack-dev libgomp1 python3-dev
+
+      - name: Upgrade tools
+        run: python -m pip install --upgrade pip setuptools wheel pip-tools
+
+      - name: Create wheel dir
+        run: mkdir -p /tmp/wheels
+
+      - name: Create resolved pins (internet required)
+        run: |
+          # Create inputs.in from your top-level requirements if not present.
+          # inputs.in should contain the top-level packages you want (mlflow, sentence-transformers, etc.)
+          # Example: cp requirements-runtime.txt inputs.in
+          pip-compile --generate-hashes --output-file=resolved-requirements.txt inputs.in
+
+      - name: Download wheels from PyPI and PyTorch index
+        env:
+          PYTORCH_INDEX: https://download.pytorch.org/whl/cpu
+        run: |
+          # Download all resolved pins as wheels (including transitive) into /tmp/wheels
+          python -m pip download --dest /tmp/wheels --only-binary=:all: --prefer-binary \
+            --extra-index-url $PYTORCH_INDEX -r resolved-requirements.txt || true
+          # Also download any remaining (sdist fallback) as wheels (pip will fetch sdist if wheel missing)
+          python -m pip download --dest /tmp/wheels -r resolved-requirements.txt || true
+
+      - name: Optional build manylinux wheels for source-only packages (cibuildwheel)
+        if: ${{ always() }}
+        run: |
+          # Use cibuildwheel only if you have local packages or sdists that must be compiled into manylinux wheels.
+          # Uncomment and configure if you need to build wheels for packages that only ship sdists.
+          # pip install cibuildwheel
+          # CIBW_PLATFORM=manylinux_x86_64 cibuildwheel --output-dir /tmp/wheels
+          echo "Skipping cibuildwheel by default; enable if you need to build manylinux wheels."
+
+      - name: Add any missing single-package wheels (explicit fixes)
+        run: |
+          # If CI logs show specific missing runtime packages, add explicit downloads here.
+          python -m pip download --dest /tmp/wheels Mako langcodes>=3.2.0,<4.0.0 || true
+
+      - name: Create manifest and checksums
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          wh='/tmp/wheels'
+          m={}
+          for f in sorted(os.listdir(wh)):
+            p=os.path.join(wh,f)
+            if os.path.isfile(p):
+              with open(p,'rb') as fh:
+                m[f]=hashlib.sha256(fh.read()).hexdigest()
+          open(os.path.join(wh,'manifest.json'),'w').write(json.dumps(m,indent=2))
+          PY
+
+      - name: Verify install from wheelhouse
+        run: |
+          python -m pip install --no-index --find-links=/tmp/wheels -r resolved-requirements.txt -c constraints.txt --no-deps
+          python -m pip check
+
+      - name: Upload wheelhouse artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheelhouse-${{ github.sha }}
+          path: /tmp/wheels

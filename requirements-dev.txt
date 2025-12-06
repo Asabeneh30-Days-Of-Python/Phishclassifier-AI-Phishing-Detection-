@@ -1,0 +1,13 @@
+-r requirements-runtime.txt
+# Training, explainability, and registry tooling (heavy)
+#lightgbm==4.6.0
+#shap==0.48.0
+#mlflow==3.4.0
+
+# Optional heavy embedding / transformer tooling — keep here unless you need it in runtime
+#sentence-transformers==2.2.2
+#torch==2.0.1+cpu  # install via appropriate index when needed
+
+# Dev/testing/formatting tools
+pytest==7.4.0
+black==24.10.0

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Notification Rules</h2>
+
+<a class="btn btn-success mb-3" href="{{ url_for('notifications.create_notification') }}">
+  + Create New Rule
+</a>
+
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Threshold</th>
+      <th>Active</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rules %}
+      <tr>
+        <td>{{ r.name }}</td>
+        <td>{{ r.condition_type.replace("_"," ").title() }}</td>
+        <td>{{ r.threshold }}</td>
+        <td>{{ "Yes" if r.active else "No" }}</td>
+        <td>
+          <a class="btn btn-sm btn-primary" href="{{ url_for('notifications.edit_notification', rule_id=r.id) }}">
+            Edit
+          </a>
+          <form
+            action="{{ url_for('notifications.delete_notification', rule_id=r.id) }}"
+            method="post"
+            style="display:inline"
+          >
+            <button class="btn btn-sm btn-danger" onclick="return confirm('Delete this rule?')">
+              Delete
+            </button>
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% if edit_rule or form_action == "create" %}
+  <hr>
+  <h3>{{ "Edit" if edit_rule else "Create" }} Rule</h3>
+  <form method="post">
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        name="name"
+        class="form-control"
+        value="{{ edit_rule.name if edit_rule else '' }}"
+        required
+      >
+    </div>
+    <div class="form-group">
+      <label>Condition Type</label>
+      <select name="condition_type" class="form-control">
+        {% for c in ["volume_spike","high_risk","custom_json"] %}
+          <option
+            value="{{ c }}"
+            {% if edit_rule and edit_rule.condition_type==c %}selected{% endif %}
+          >
+            {{ c.replace("_"," ").title() }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Threshold</label>
+      <input
+        name="threshold"
+        type="number"
+        step="0.01"
+        class="form-control"
+        value="{{ edit_rule.threshold if edit_rule else '' }}"
+        required
+      >
+    </div>
+    <div class="form-group form-check">
+      <input
+        name="active"
+        type="checkbox"
+        class="form-check-input"
+        id="activeCheck"
+        {% if edit_rule and edit_rule.active %}checked{% endif %}
+      >
+      <label class="form-check-label" for="activeCheck">Active</label>
+    </div>
+    <button type="submit" class="btn btn-primary">
+      {{ "Update" if edit_rule else "Create" }} Rule
+    </button>
+  </form>
+{% endif %}
+{% endblock %}

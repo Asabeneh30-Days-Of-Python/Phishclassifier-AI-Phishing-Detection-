@@ -1,0 +1,114 @@
+admin_dashboard.html
+
+{# templates/admin_dashboard.html #}
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - PhishClassifier{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="admin-card">
+    <div class="card-header">Admin Dashboard</div>
+    <div class="admin-card-body">
+      <p>Welcome to the admin dashboard, {{ current_user.username }}.</p>
+      <p>This area is for administrators only. Here you can review feedback, manage users, and oversee system settings.</p>
+
+      <!-- Real-time feedback placeholder -->
+      <div id="feedback-container" class="mb-4"></div>
+
+      <!-- Stored Feedback Section -->
+      <h3 class="mt-4 mb-3">Stored Feedback</h3>
+      {% if feedback_items %}
+        <ul class="list-group">
+          {% for item in feedback_items %}
+            <li class="list-group-item mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <strong>User {{ item.user.username }}:</strong>
+                  <p class="mb-1">{{ item.content }}</p>
+                  {% if item.predicted_label and item.correct_label %}
+                    <small class="text-muted">
+                      <em>Predicted:</em> {{ item.predicted_label }}
+                      |
+                      <em>Correct:</em> {{ item.correct_label }}
+                    </small>
+                  {% endif %}
+                </div>
+                <small class="text-muted">
+                  {{ item.created_at.strftime('%Y-%m-%d %H:%M:%S') }}
+                </small>
+              </div>
+
+              {% if item.admin_response %}
+                <div class="alert alert-secondary mt-3 py-2">
+                  <strong>Admin Response:</strong> {{ item.admin_response }}
+                </div>
+              {% else %}
+                <form
+                  action="{{ url_for('respond_feedback', feedback_id=item.id) }}"
+                  method="post"
+                  class="admin-form mt-3"
+                >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      name="response"
+                      class="form-control"
+                      placeholder="Enter your response"
+                    >
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </form>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No feedback available.</p>
+      {% endif %}
+
+      <!-- Trainer links for users with the trainer role -->
+      {% if current_user.has_role('trainer') %}
+        <div class="mt-4">
+          <a
+            href="{{ url_for('trainer.train') }}"
+            class="btn btn-warning btn-block"
+          >Model Training Console</a>
+          <a
+            href="{{ url_for('trainer.train') }}"
+            class="btn btn-secondary mt-2"
+          >Trainer Console</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+  <!-- Socket.IO client for real-time feedback -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    var socket = io.connect(
+      location.protocol + '//' + document.domain + ':' + location.port + '/admin'
+    );
+    socket.on('connect', function() {
+      console.log('Connected to admin namespace.');
+    });
+    socket.on('new_feedback', function(data) {
+      var container = document.getElementById('feedback-container');
+      var el = document.createElement('div');
+      el.className = "alert alert-info mt-2 py-2";
+      el.innerHTML =
+        "<strong>User " + data.username + ":</strong> " +
+        data.feedback_text +
+        "<br><small><em>Predicted:</em> " + data.predicted_label +
+        " | <em>Correct:</em> " + data.correct_label + "</small>";
+      container.prepend(el);
+    });
+  </script>
+{% endblock %}

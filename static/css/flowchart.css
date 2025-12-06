@@ -1,0 +1,19 @@
+
+.flowchart-container { max-width: 700px; margin: 1.5rem auto; }
+
+@keyframes pulse {
+  0%   { transform: scale(1);   }
+  50%  { transform: scale(1.08);}
+  100% { transform: scale(1);   }
+}
+
+.mermaid svg .node rect {
+  stroke: #888;
+  fill:   #fff;
+  stroke-width: 1px;
+}
+.mermaid svg .node.active rect {
+  stroke: #28a745;
+  fill:   #e6ffe6;
+  animation: pulse 0.6s ease-in-out;
+}

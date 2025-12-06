@@ -1,0 +1,43 @@
+﻿2025-10-30T08:39:09.356151071Z /app/start-worker-io.sh: line 1: ´╗┐#!/bin/bash: No such file or directory
+2025-10-30T08:39:15.399236655Z 23 RLock(s) were not greened, to fix this error make sure you run eventlet.monkey_patch() before importing any other modules.
+2025-10-30T08:39:25.578227727Z /usr/local/lib/python3.11/site-packages/ddtrace/internal/module.py:300: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+2025-10-30T08:39:25.578306169Z   self.loader.exec_module(module)
+2025-10-30T08:39:26.199934633Z /usr/local/lib/python3.11/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+2025-10-30T08:39:26.200006825Z absolutely not recommended!
+2025-10-30T08:39:26.200017679Z 
+2025-10-30T08:39:26.200023227Z Please specify a different user using the --uid option.
+2025-10-30T08:39:26.200028748Z 
+2025-10-30T08:39:26.200033868Z User information: uid=0 euid=0 gid=0 egid=0
+2025-10-30T08:39:26.200039445Z 
+2025-10-30T08:39:26.200044605Z   warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+2025-10-30T08:39:11.824436982Z eventlet monkey patched
+2025-10-30T08:39:26.751360417Z  
+2025-10-30T08:39:26.751454661Z  -------------- io@94e32e254b54 v5.5.2 (immunity)
+2025-10-30T08:39:26.751472938Z --- ***** ----- 
+2025-10-30T08:39:26.751482027Z -- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.31 2025-10-30 08:39:26
+2025-10-30T08:39:26.751490372Z - *** --- * --- 
+2025-10-30T08:39:26.751498249Z - ** ---------- [config]
+2025-10-30T08:39:26.751506411Z - ** ---------- .> app:         tasks:0x7f5017d81450
+2025-10-30T08:39:26.751516838Z - ** ---------- .> transport:   redis://redis:6379/0
+2025-10-30T08:39:26.751522845Z - ** ---------- .> results:     redis://redis:6379/0
+2025-10-30T08:39:26.751528232Z - *** --- * --- .> concurrency: 4 (eventlet)
+2025-10-30T08:39:26.751533661Z -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+2025-10-30T08:39:26.751539163Z --- ***** ----- 
+2025-10-30T08:39:26.751544318Z  -------------- [queues]
+2025-10-30T08:39:26.751549496Z                 .> celery           exchange=celery(direct) key=celery
+2025-10-30T08:39:26.751555113Z                 .> io               exchange=io(direct) key=io
+2025-10-30T08:39:26.751560640Z 
+2025-10-30T08:39:26.751565911Z [tasks]
+2025-10-30T08:39:26.751571089Z   . classify_email_task
+2025-10-30T08:39:26.751576296Z   . tasks.purge_old
+2025-10-30T08:39:26.751581618Z   . tasks.retrain_model_task
+2025-10-30T08:39:26.751586871Z 
+2025-10-30T08:39:26.767176803Z [2025-10-30 08:39:26,765: INFO/MainProcess] Connected to redis://redis:6379/0
+2025-10-30T08:39:26.782721630Z [2025-10-30 08:39:26,781: INFO/MainProcess] mingle: searching for neighbors
+2025-10-30T08:39:27.882919724Z [2025-10-30 08:39:27,881: INFO/MainProcess] mingle: sync with 1 nodes
+2025-10-30T08:39:27.882984922Z [2025-10-30 08:39:27,882: INFO/MainProcess] mingle: sync complete
+2025-10-30T08:39:27.915039962Z [2025-10-30 08:39:27,914: INFO/MainProcess] pidbox: Connected to redis://redis:6379/0.
+2025-10-30T08:39:27.921568153Z [2025-10-30 08:39:27,920: INFO/MainProcess] io@94e32e254b54 ready.
+2025-10-30T10:20:25.397083349Z [2025-10-30 10:20:25,206: INFO/MainProcess] missed heartbeat from cpu@30abd3a236cd
+2025-10-30T12:06:31.126785147Z [2025-10-30 12:06:31,121: INFO/MainProcess] missed heartbeat from cpu@30abd3a236cd
+2025-10-30T12:07:39.264318434Z [2025-10-30 12:07:39,262: INFO/MainProcess] missed heartbeat from cpu@30abd3a236cd

@@ -1,0 +1,136 @@
+
+{% extends "base.html" %}
+{% block title %}Login – PhishClassifier{% endblock %}
+
+{% block content %}
+  <!-- Neon site title -->
+  <div class="text-center my-5">
+    <h1 class="site-title">PhishClassifier</h1>
+  </div>
+
+  <!-- Isolated Login Container -->
+  <div class="login-container mx-auto">
+    <h2 class="login-heading">Please log in to access this page:</h2>
+
+    <form
+      action="{{ url_for('login') }}{% if request.args.next %}?next={{ request.args.next }}{% endif %}"
+      method="post"
+      class="px-3"
+    >
+      <input type="hidden" name="next" value="{{ request.args.get('next','') }}" />
+
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="form-control"
+          required
+          autofocus
+        />
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mt-4">
+        Login
+      </button>
+    </form>
+
+    <!-- Inline flash for login failures -->
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+      <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+    {% endfor %}
+
+    <!-- Register Modal Trigger -->
+    <button
+      type="button"
+      class="btn btn-secondary mt-4 btn-block"
+      data-toggle="modal"
+      data-target="#registerModal"
+    >
+      Register
+    </button>
+  </div>
+
+  <!-- Registration Modal Overlay -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <form action="{{ url_for('register') }}" method="post">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Register</h5>
+            <button
+              type="button"
+              class="close text-light"
+              data-dismiss="modal"
+            ><span aria-hidden="true">&times;</span></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="reg_username" class="form-label">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="reg_username"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="reg_password" class="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="reg_password"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="confirm_password" class="form-label">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-dismiss="modal"
+            >Cancel</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+result.html
+
+<div class="result">
+  <h3>Prediction:</h3>
+  <p>{{ prediction }}</p>
+  <h4>Risk Score: {{ risk_score }}</h4>
+</div>
